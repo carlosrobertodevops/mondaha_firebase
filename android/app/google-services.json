@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "388277384316",
+    "project_id": "chegii-sspal-1i34sf",
+    "storage_bucket": "chegii-sspal-1i34sf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388277384316:android:375cf9f0e4ff859c9945f9",
+        "android_client_info": {
+          "package_name": "com.mycompany.crmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388277384316-73cnks5g34hta8ds7l054gilamtcb0hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwbiEAu03fQ2xHo0Tm3DFZHQUPvCbpXFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388277384316-73cnks5g34hta8ds7l054gilamtcb0hv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "388277384316-lb7401ar6prmhf33idu6nf3djade2msc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.crmapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
