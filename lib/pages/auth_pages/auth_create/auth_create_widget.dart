@@ -870,9 +870,13 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                                       .text) {
                                                 ScaffoldMessenger.of(context)
                                                     .showSnackBar(
-                                                  const SnackBar(
+                                                  SnackBar(
                                                     content: Text(
-                                                      'Passwords don\'t match!',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '80ouzj9q' /* Passwords don't match */,
+                                                      ),
                                                     ),
                                                   ),
                                                 );

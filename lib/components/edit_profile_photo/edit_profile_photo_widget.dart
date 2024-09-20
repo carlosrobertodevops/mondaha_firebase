@@ -238,7 +238,10 @@ class _EditProfilePhotoWidgetState extends State<EditProfilePhotoWidget> {
                                             try {
                                               showUploadMessage(
                                                 context,
-                                                'Uploading file...',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'dqrzd6sq' /* Uploading file... */,
+                                                ),
                                                 showLoading: true,
                                               );
                                               selectedUploadedFiles =
@@ -286,11 +289,19 @@ class _EditProfilePhotoWidgetState extends State<EditProfilePhotoWidget> {
                                                     downloadUrls.first;
                                               });
                                               showUploadMessage(
-                                                  context, 'Success!');
+                                                  context,
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'dpqtohyf' /* Success! */,
+                                                  ));
                                             } else {
                                               safeSetState(() {});
-                                              showUploadMessage(context,
-                                                  'Failed to upload data');
+                                              showUploadMessage(
+                                                  context,
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'v01vf71s' /* Failed to upload data */,
+                                                  ));
                                               return;
                                             }
                                           }

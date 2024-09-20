@@ -114,14 +114,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': ' CHEGII/SSPAL',
     },
     '3p97u62u': {
-      'en': 'Welcome Back!',
-      'es': '¡Bienvenido de nuevo!',
-      'pt': 'Bem vindo de volta!',
+      'en': 'Welcome!',
+      'es': '¡Bienvenido!',
+      'pt': 'Bem vindo!',
     },
     'xkz4xjo6': {
       'en': 'Use the form below to access your account.',
       'es': 'Utilice el siguiente formulario para acceder a su cuenta.',
-      'pt': 'Utilize o formulário abaixo para acessar sua conta.',
+      'pt': 'Informe os dados abaixo para acessar sua conta.',
     },
     'k9u5spqi': {
       'en': 'Email Address',
@@ -3168,79 +3168,89 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Para carregar dados, este aplicativo requer permissão para acessar a biblioteca de fotos.',
     },
     '65e2tfs2': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Error:[error]',
+      'es': 'Error:[error]',
+      'pt': 'Erro:[erro]',
     },
     'ddazihx4': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Password reser email sent!',
+      'es': '¡Correo electrónico de reserva de contraseña enviado!',
+      'pt': 'E-mail de reserva de senha enviado!',
     },
     'db03cpjj': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Email required!',
+      'es': '¡Se requiere correo electrónico!',
+      'pt': 'E-mail obrigatório!',
     },
     'fdb9078p': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Phone Number required and has to start with +.',
+      'es': 'Se requiere número de teléfono y debe comenzar con +.',
+      'pt': 'Número de telefone obrigatório e deve começar com +.',
     },
     '80ouzj9q': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Passwords don\'t match',
+      'es': 'Las contraseñas no coinciden',
+      'pt': 'As senhas não correspondem',
     },
     '6rzhptp9': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Enter SMS verification code',
+      'es': 'Introduzca el código de verificación por SMS',
+      'pt': 'Insira o código de verificação SMS',
     },
     'ce8c4ty0': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en':
+          'Too long since most recent sign in. Sign in again befores deleting your email.',
+      'es':
+          'Ha pasado demasiado tiempo desde el último inicio de sesión. Inicie sesión nuevamente antes de eliminar su correo electrónico.',
+      'pt':
+          'Muito tempo desde o último login. Entre novamente antes de excluir seu e-mail.',
     },
     'fv6sk1t1': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en':
+          'Too long since most recent sign in. Sign in again befores updating your email.',
+      'es':
+          'Ha pasado demasiado tiempo desde el último inicio de sesión. Inicie sesión nuevamente antes de actualizar su correo electrónico.',
+      'pt':
+          'Muito tempo desde o último login. Entre novamente antes de atualizar seu e-mail.',
     },
     'ics1ahz4': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Email change confirmation email sent!',
+      'es':
+          '¡Correo electrónico de confirmación de cambio de correo electrónico enviado!',
+      'pt': 'E-mail de confirmação de alteração de e-mail enviado!',
     },
     'a454xjq7': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Email already in use by another account',
+      'es': 'Correo electrónico ya en uso por otra cuenta',
+      'pt': 'E-mail já em uso por outra conta',
     },
     'ds8leobm': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en':
+          'The supplied auth credential is incorrect, malformed or has expired',
+      'es':
+          'La credencial de autenticación proporcionada es incorrecta, está mal formada o ha expirado',
+      'pt':
+          'A credencial de autenticação fornecida está incorreta, malformada ou expirou',
     },
     'kcvqa08x': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Invalid file format',
+      'es': 'Formato de archivo no válido',
+      'pt': 'Formato de arquivo inválido',
     },
     'dqrzd6sq': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Uploading file...',
+      'es': 'Subiendo archivo...',
+      'pt': 'Carregando arquivo...',
     },
     'dpqtohyf': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Success!',
+      'es': '¡Éxito!',
+      'pt': 'Sucesso!',
     },
     'v01vf71s': {
-      'en': '',
-      'es': '',
-      'pt': '',
+      'en': 'Failed to upload data',
+      'es': 'No se pudieron cargar los datos',
+      'pt': 'Falha ao carregar dados',
     },
     'gcv6def1': {
       'en': '',

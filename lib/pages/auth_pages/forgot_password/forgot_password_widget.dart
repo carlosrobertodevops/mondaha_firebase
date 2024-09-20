@@ -264,9 +264,11 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                         'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
                     if (_model.emailAddressTextController.text.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
+                        SnackBar(
                           content: Text(
-                            'Email required!',
+                            FFLocalizations.of(context).getText(
+                              'db03cpjj' /* Email required! */,
+                            ),
                           ),
                         ),
                       );

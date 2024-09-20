@@ -203,7 +203,9 @@ class _ModalCreateCompanyWidgetState extends State<ModalCreateCompanyWidget>
                                         try {
                                           showUploadMessage(
                                             context,
-                                            'Uploading file...',
+                                            FFLocalizations.of(context).getText(
+                                              'dqrzd6sq' /* Uploading file... */,
+                                            ),
                                             showLoading: true,
                                           );
                                           selectedUploadedFiles = selectedMedia
@@ -244,11 +246,19 @@ class _ModalCreateCompanyWidgetState extends State<ModalCreateCompanyWidget>
                                                 downloadUrls;
                                           });
                                           showUploadMessage(
-                                              context, 'Success!');
+                                              context,
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'dpqtohyf' /* Success! */,
+                                              ));
                                         } else {
                                           safeSetState(() {});
                                           showUploadMessage(
-                                              context, 'Failed to upload data');
+                                              context,
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'v01vf71s' /* Failed to upload data */,
+                                              ));
                                           return;
                                         }
                                       }

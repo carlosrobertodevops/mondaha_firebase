@@ -332,7 +332,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                 ),
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '3p97u62u' /* Welcome Back! */,
+                                    '3p97u62u' /* Welcome! */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
