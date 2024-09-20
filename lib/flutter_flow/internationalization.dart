@@ -283,9 +283,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Já tem uma conta?',
     },
     'ud92zl8z': {
-      'en': 'Log In',
+      'en': 'Login',
       'es': 'Acceso',
-      'pt': 'Conecte-se',
+      'pt': 'Acceso',
     },
     'zuuuklky': {
       'en': 'Home',

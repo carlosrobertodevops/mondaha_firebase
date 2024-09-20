@@ -5,12 +5,12 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-            apiKey: "AIzaSyC58380iLQyBelWdDdHreIVeRSWHi_F5DY",
-            authDomain: "chegii-sspal-1i34sf.firebaseapp.com",
-            projectId: "chegii-sspal-1i34sf",
-            storageBucket: "chegii-sspal-1i34sf.appspot.com",
-            messagingSenderId: "388277384316",
-            appId: "1:388277384316:web:9694fb3eb28f2e3f9945f9"));
+            apiKey: "AIzaSyAsv8t3t-TkgNrchBWYhSySt5hO-40QaZc",
+            authDomain: "mondaha-9r9wpx.firebaseapp.com",
+            projectId: "mondaha-9r9wpx",
+            storageBucket: "mondaha-9r9wpx.appspot.com",
+            messagingSenderId: "455267850635",
+            appId: "1:455267850635:web:23efc34cbd1a47555fb78e"));
   } else {
     await Firebase.initializeApp();
   }
