@@ -852,7 +852,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                           'kk2rdqi2' /* Create Account */,
                                         ),
                                         options: FFButtonOptions(
-                                          width: 130.0,
+                                          width: 109.0,
                                           height: 30.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
@@ -868,6 +868,9 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMediumFamily,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
                                                 useGoogleFonts: GoogleFonts
@@ -916,21 +919,23 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                 ),
               ),
               Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Flexible(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(0.0),
                         child: Image.network(
-                          'https://picsum.photos/seed/232/600',
+                          'https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxNHx8dGVjaHxlbnwwfHx8fDE3MjY4NDEyMDh8MA&ixlib=rb-4.0.3&q=80&w=1080',
                           width: double.infinity,
                           fit: BoxFit.cover,
+                          alignment: const Alignment(0.0, 0.0),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],

@@ -1028,7 +1028,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                               'ud92zl8z' /* Login */,
                                             ),
                                             options: FFButtonOptions(
-                                              width: 70.0,
+                                              width: 128.0,
                                               height: 30.0,
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),

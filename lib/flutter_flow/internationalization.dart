@@ -161,7 +161,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'kk2rdqi2': {
       'en': 'Create Account',
       'es': 'Crear una cuenta',
-      'pt': 'Criar uma conta',
+      'pt': 'Cadastre-se',
     },
     'kfm1khsu': {
       'en': 'Field is required',
@@ -235,7 +235,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'l2xxy1gf': {
       'en': 'Get Started',
       'es': 'Empezar',
-      'pt': 'Cadastre sua senha de acesso',
+      'pt': 'Cadastre -se',
     },
     '59g0bt96': {
       'en': 'Use the form below to get started.',
@@ -285,7 +285,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'ud92zl8z': {
       'en': 'Login',
       'es': 'Acceso',
-      'pt': 'Acceso',
+      'pt': 'Accese sua conta',
     },
     'zuuuklky': {
       'en': 'Home',
