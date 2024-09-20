@@ -393,9 +393,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10.0),
                                 child: Image.network(
-                                  getCORSProxyUrl(
-                                    'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
-                                  ),
+                                  'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
                                   width: 60.0,
                                   height: 60.0,
                                   fit: BoxFit.cover,
@@ -1632,9 +1630,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -1650,9 +1646,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -1668,9 +1662,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.fitHeight,
                                                   ),
                                                 ),
@@ -1936,9 +1928,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -1954,9 +1944,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -1972,9 +1960,7 @@ class _ProjectDetailsAltWidgetState extends State<ProjectDetailsAltWidget>
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
-                                                    getCORSProxyUrl(
-                                                      'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                    ),
+                                                    'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                                     fit: BoxFit.fitHeight,
                                                   ),
                                                 ),

@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class ProjectDetailsModel extends FlutterFlowModel<ProjectDetailsWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Model for projectDetails_alt component.
+  // Model for project_details_alt component.
   late ProjectDetailsAltModel projectDetailsAltModel;
 
   @override

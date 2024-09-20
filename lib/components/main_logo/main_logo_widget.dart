@@ -42,8 +42,8 @@ class _MainLogoWidgetState extends State<MainLogoWidget> {
         Theme.of(context).brightness == Brightness.dark
             ? 'assets/images/mondaha-nobg.png'
             : 'assets/images/mondaha-nobg.png',
-        width: 234.0,
-        height: 170.0,
+        width: 271.0,
+        height: 229.0,
         fit: BoxFit.fitWidth,
         alignment: const Alignment(0.0, 0.0),
       ),

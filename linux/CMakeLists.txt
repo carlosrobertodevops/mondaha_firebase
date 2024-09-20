@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "mondaha")
-set(APPLICATION_ID "com.mycompany.crmapp")
+set(APPLICATION_ID "com.mondaha.mondahaapp")
 
 cmake_policy(SET CMP0063 NEW)
 

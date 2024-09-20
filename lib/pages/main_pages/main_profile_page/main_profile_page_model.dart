@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class MainProfilePageModel extends FlutterFlowModel<MainProfilePageWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Model for webNav component.
+  // Model for web_nav component.
   late WebNavModel webNavModel;
 
   @override

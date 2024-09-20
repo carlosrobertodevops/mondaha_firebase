@@ -175,9 +175,7 @@ class _EditProfilePhotoWidgetState extends State<EditProfilePhotoWidget> {
                                                     const Duration(milliseconds: 500),
                                                 fadeOutDuration:
                                                     const Duration(milliseconds: 500),
-                                                imageUrl: getCORSProxyUrl(
-                                                  currentUserPhoto,
-                                                ),
+                                                imageUrl: currentUserPhoto,
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -197,9 +195,7 @@ class _EditProfilePhotoWidgetState extends State<EditProfilePhotoWidget> {
                                                   const Duration(milliseconds: 500),
                                               fadeOutDuration:
                                                   const Duration(milliseconds: 500),
-                                              imageUrl: getCORSProxyUrl(
-                                                _model.uploadedFileUrl,
-                                              ),
+                                              imageUrl: _model.uploadedFileUrl,
                                               fit: BoxFit.cover,
                                             ),
                                           ),

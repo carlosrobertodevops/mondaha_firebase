@@ -25,7 +25,7 @@ class _MessagesDetailsWidgetState extends State<MessagesDetailsWidget> {
     _model = createModel(context, () => MessagesDetailsModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'messagesDetails'});
+        parameters: {'screen_name': 'messages_details'});
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
@@ -397,9 +397,7 @@ class _MessagesDetailsWidgetState extends State<MessagesDetailsWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.network(
-                                                getCORSProxyUrl(
-                                                  'https://picsum.photos/seed/641/600',
-                                                ),
+                                                'https://picsum.photos/seed/641/600',
                                                 width: 300.0,
                                                 height: 200.0,
                                                 fit: BoxFit.cover,
@@ -534,9 +532,7 @@ class _MessagesDetailsWidgetState extends State<MessagesDetailsWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.network(
-                                                  getCORSProxyUrl(
-                                                    'https://picsum.photos/seed/641/600',
-                                                  ),
+                                                  'https://picsum.photos/seed/641/600',
                                                   width: 300.0,
                                                   height: 200.0,
                                                   fit: BoxFit.cover,

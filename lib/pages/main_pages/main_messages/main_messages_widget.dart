@@ -224,7 +224,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                             'MAIN_MESSAGES_search_rounded_ICN_ON_TAP');
 
                                         context.pushNamed(
-                                          'searchPage',
+                                          'search_page',
                                           extra: <String, dynamic>{
                                             kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
@@ -504,9 +504,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                                                               10.0),
                                                                   child: Image
                                                                       .network(
-                                                                    getCORSProxyUrl(
-                                                                      'https://source.unsplash.com/random/1280x720?profile&2',
-                                                                    ),
+                                                                    'https://source.unsplash.com/random/1280x720?profile&2',
                                                                     width: 44.0,
                                                                     height:
                                                                         44.0,
@@ -707,9 +705,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                                                               10.0),
                                                                   child: Image
                                                                       .network(
-                                                                    getCORSProxyUrl(
-                                                                      'https://source.unsplash.com/random/1280x720?profile&35',
-                                                                    ),
+                                                                    'https://source.unsplash.com/random/1280x720?profile&35',
                                                                     width: 44.0,
                                                                     height:
                                                                         44.0,
@@ -908,9 +904,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                                                               10.0),
                                                                   child: Image
                                                                       .network(
-                                                                    getCORSProxyUrl(
-                                                                      'https://source.unsplash.com/random/1280x720?profile&3',
-                                                                    ),
+                                                                    'https://source.unsplash.com/random/1280x720?profile&3',
                                                                     width: 44.0,
                                                                     height:
                                                                         44.0,
@@ -1475,9 +1469,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                                                             BorderRadius.circular(8.0),
                                                                         child: Image
                                                                             .network(
-                                                                          getCORSProxyUrl(
-                                                                            'https://picsum.photos/seed/641/600',
-                                                                          ),
+                                                                          'https://picsum.photos/seed/641/600',
                                                                           width:
                                                                               300.0,
                                                                           height:
@@ -1651,9 +1643,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
                                                                               BorderRadius.circular(8.0),
                                                                           child:
                                                                               Image.network(
-                                                                            getCORSProxyUrl(
-                                                                              'https://picsum.photos/seed/641/600',
-                                                                            ),
+                                                                            'https://picsum.photos/seed/641/600',
                                                                             width:
                                                                                 300.0,
                                                                             height:

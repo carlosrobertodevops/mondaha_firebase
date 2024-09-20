@@ -484,7 +484,7 @@ class _CommandPaletteWidgetState extends State<CommandPaletteWidget>
                                           logFirebaseEvent(
                                               'COMMAND_PALETTE_contentView_1_ON_TAP');
 
-                                          context.pushNamed('searchPage');
+                                          context.pushNamed('search_page');
                                         },
                                         child: Container(
                                           width: double.infinity,

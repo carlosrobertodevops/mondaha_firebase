@@ -29,7 +29,7 @@ class _SearchPageWidgetState extends State<SearchPageWidget> {
     super.initState();
     _model = createModel(context, () => SearchPageModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'searchPage'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'search_page'});
     _model.textController ??= TextEditingController();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -417,10 +417,7 @@ class _SearchPageWidgetState extends State<SearchPageWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.network(
-                                                  getCORSProxyUrl(
-                                                    usersListUsersRecord
-                                                        .photoUrl,
-                                                  ),
+                                                  usersListUsersRecord.photoUrl,
                                                   width: 44.0,
                                                   height: 44.0,
                                                   fit: BoxFit.cover,

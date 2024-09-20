@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class UserDetailsModel extends FlutterFlowModel<UserDetailsWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Model for user_Details_main component.
+  // Model for user_details_main component.
   late UserDetailsMainModel userDetailsMainModel;
 
   @override

@@ -30,7 +30,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
     super.initState();
     _model = createModel(context, () => AuthLoginModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'auth_Login'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'auth_login'});
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
@@ -255,8 +255,8 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                FlutterFlowTheme.of(context).accent1,
-                FlutterFlowTheme.of(context).primary
+                FlutterFlowTheme.of(context).overlay0,
+                FlutterFlowTheme.of(context).overlay
               ],
               stops: const [0.3, 1.0],
               begin: const AlignmentDirectional(1.0, -1.0),
@@ -292,7 +292,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                               alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '6bp977ao' /* MONDAHA - CHEGII/SSPAL */,
+                                  '6bp977ao' /*  CHEGII/SSPAL */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .displayMedium
@@ -636,7 +636,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                       logFirebaseEvent(
                                           'AUTH_LOGIN_Button-ForgotPassword_ON_TAP');
 
-                                      context.pushNamed('forgotPassword');
+                                      context.pushNamed('forgot_password');
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       's8bicxzh' /* Forgot Password? */,
@@ -656,7 +656,8 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMediumFamily,
-                                            color: Colors.black,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             useGoogleFonts: GoogleFonts.asMap()
@@ -691,7 +692,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                       }
 
                                       context.goNamedAuth(
-                                          'Main_Home', context.mounted);
+                                          'main_home', context.mounted);
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'm9klj9ah' /* Login */,
@@ -771,7 +772,7 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                           'AUTH_LOGIN_CREATE_ACCOUNT_BTN_ON_TAP');
 
                                       context.pushNamed(
-                                        'auth_Create',
+                                        'auth_create',
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,

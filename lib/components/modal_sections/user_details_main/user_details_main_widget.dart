@@ -348,9 +348,7 @@ class _UserDetailsMainWidgetState extends State<UserDetailsMainWidget>
                           Align(
                             alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Image.network(
-                              getCORSProxyUrl(
-                                'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
-                              ),
+                              'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
                               width: double.infinity,
                               height: 240.0,
                               fit: BoxFit.cover,
@@ -674,9 +672,7 @@ class _UserDetailsMainWidgetState extends State<UserDetailsMainWidget>
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(40.0),
                                       child: Image.network(
-                                        getCORSProxyUrl(
-                                          'https://images.unsplash.com/photo-1611590027211-b954fd027b51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                        ),
+                                        'https://images.unsplash.com/photo-1611590027211-b954fd027b51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
                                         width: 40.0,
                                         height: 40.0,
                                         fit: BoxFit.cover,
@@ -882,9 +878,7 @@ class _UserDetailsMainWidgetState extends State<UserDetailsMainWidget>
                                               borderRadius:
                                                   BorderRadius.circular(40.0),
                                               child: Image.network(
-                                                getCORSProxyUrl(
-                                                  'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                ),
+                                                'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
                                                 width: 40.0,
                                                 height: 40.0,
                                                 fit: BoxFit.cover,

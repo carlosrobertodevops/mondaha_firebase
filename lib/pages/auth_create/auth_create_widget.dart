@@ -30,7 +30,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
     super.initState();
     _model = createModel(context, () => AuthCreateModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'auth_Create'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'auth_create'});
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
@@ -239,8 +239,8 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                FlutterFlowTheme.of(context).accent1,
-                FlutterFlowTheme.of(context).primary
+                FlutterFlowTheme.of(context).overlay0,
+                FlutterFlowTheme.of(context).overlay
               ],
               stops: const [0.3, 1.0],
               begin: const AlignmentDirectional(1.0, -1.0),
@@ -293,7 +293,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 1.0),
                                   child: wrapWithModel(
                                     model: _model.mainLogoModel,
                                     updateCallback: () => safeSetState(() {}),
@@ -721,7 +721,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                   }
 
                                   context.goNamedAuth(
-                                      'Main_Home', context.mounted);
+                                      'main_home', context.mounted);
                                 },
                                 text: FFLocalizations.of(context).getText(
                                   '29ut49wi' /* Create Account */,
@@ -794,7 +794,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                       'AUTH_CREATE_PAGE_LOG_IN_BTN_ON_TAP');
 
                                   context.pushNamed(
-                                    'auth_Login',
+                                    'auth_login',
                                     extra: <String, dynamic>{
                                       kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,

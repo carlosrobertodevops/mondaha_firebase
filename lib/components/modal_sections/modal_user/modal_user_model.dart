@@ -10,7 +10,7 @@ class ModalUserModel extends FlutterFlowModel<ModalUserWidget> {
 
   ///  State fields for stateful widgets in this component.
 
-  // Model for user_Details_main component.
+  // Model for user_details_main component.
   late UserDetailsMainModel userDetailsMainModel;
 
   @override

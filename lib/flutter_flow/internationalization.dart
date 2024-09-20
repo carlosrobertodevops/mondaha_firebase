@@ -106,12 +106,12 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // auth_Login
+  // auth_login
   {
     '6bp977ao': {
-      'en': 'MONDAHA - CHEGII/SSPAL',
-      'es': 'MONDAHA - CHEGII/SSPAL',
-      'pt': 'MONDAHA - CHEGII/SSPAL',
+      'en': ' CHEGII/SSPAL',
+      'es': ' CHEGII/SSPAL',
+      'pt': ' CHEGII/SSPAL',
     },
     '3p97u62u': {
       'en': 'Welcome Back!',
@@ -151,7 +151,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'm9klj9ah': {
       'en': 'Login',
       'es': 'Acceso',
-      'pt': 'Conecte-se',
+      'pt': 'Acesso',
     },
     'tcu0c8bu': {
       'en': 'Don\'t have an account?',
@@ -180,16 +180,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'bwbzfuju': {
       'en': 'Please choose an option from the dropdown',
-      'es': 'Por favor, seleccione una opción del menú desplegable.',
+      'es': 'Por favor, seleccione una opción del menú desplegable',
       'pt': 'Selecione uma opção no menu suspenso',
     },
     'iha5socs': {
       'en': 'Home',
       'es': 'Hogar',
-      'pt': 'Lar',
+      'pt': 'Início',
     },
   },
-  // forgotPassword
+  // forgot_password
   {
     '3hcuc8v6': {
       'en': 'Forgot Password',
@@ -225,7 +225,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // auth_Create
+  // auth_create
   {
     'mzb4u79c': {
       'en': 'CHEGII/SSPAL',
@@ -293,7 +293,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // Main_Home
+  // main_home
   {
     '3bi54x5g': {
       'en': 'Dashboard',
@@ -327,9 +327,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '3.200',
     },
     'saxskj92': {
-      'en': 'Expired Contracts',
-      'es': 'Contratos vencidos',
-      'pt': 'Contratos expirados',
+      'en': 'Factions Actions',
+      'es': 'Acciones de las facciones',
+      'pt': 'Ações das Facções',
     },
     '2wlrr5lg': {
       'en': '4300',
@@ -337,14 +337,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '4300',
     },
     'kphqz3hi': {
-      'en': 'Projects',
-      'es': 'Proyectos',
-      'pt': 'Projetos',
+      'en': 'Registrations',
+      'es': 'Inscripciones',
+      'pt': 'Cadastros',
     },
     'xlzf8qqx': {
-      'en': 'UI Design Team',
-      'es': 'Equipo de diseño de UI',
-      'pt': 'Equipe de design de interface do usuário',
+      'en': 'Monitoring the registration of faction members',
+      'es': 'Seguimiento del registro de los miembros de las facciones',
+      'pt': 'Monitoramento do registro de membros de facção',
     },
     'zt3s5l2s': {
       'en': '4 Members',
@@ -402,7 +402,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // Main_customerList
+  // main_membros_list
   {
     'n99lg1qh': {
       'en': 'Members',
@@ -410,9 +410,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Membros',
     },
     'c0fud373': {
-      'en': 'Invite Users',
-      'es': 'Invitar usuarios',
-      'pt': 'Convidar usuários',
+      'en': 'Member Add',
+      'es': 'Miembro Agregar',
+      'pt': 'Adicionar membro',
     },
     'lvnskphp': {
       'en': 'All',
@@ -865,7 +865,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // Main_Contracts
+  // main_faccoes
   {
     '4h88trkp': {
       'en': 'Contracts',
@@ -876,6 +876,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Factions',
       'es': 'Facciones',
       'pt': 'Facções',
+    },
+    'iuiq856w': {
+      'en': 'Faction Add',
+      'es': 'Añadir facción',
+      'pt': 'Adicionar Facção',
     },
     't967eizl': {
       'en': 'information',
@@ -1144,7 +1149,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // userDetails
+  // user_details
   {
     '9t913b44': {
       'en': 'Home',
@@ -1152,7 +1157,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // editProfile
+  // edit_profile
   {
     'mk8nnw94': {
       'en': 'Change Photo',
@@ -1180,7 +1185,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Editar Perfil',
     },
   },
-  // projectDetailsHealthAi
+  // project_details_health_ai
   {
     'mxf4vrjw': {
       'en': 'HealthAi',
@@ -1259,7 +1264,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // projectDetails
+  // project_details
   {
     'c0s3jdsy': {
       'en': 'Home',
@@ -1267,7 +1272,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // searchPage
+  // search_page
   {
     'ao46xsuv': {
       'en': 'Add Members',
@@ -1300,7 +1305,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // messagesDetails
+  // messages_details
   {
     '67tv84ak': {
       'en':
@@ -1371,7 +1376,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // searchPageMembros
+  // search_membros
   {
     '2b3djebw': {
       'en': 'Add Members',
@@ -1402,6 +1407,524 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Home',
       'es': 'Hogar',
       'pt': 'Lar',
+    },
+  },
+  // main_membros_list_all
+  {
+    'c21nlyqi': {
+      'en': 'Members',
+      'es': 'Miembros',
+      'pt': 'Membros',
+    },
+    'eux2gob0': {
+      'en': 'Member Add',
+      'es': 'Miembro Agregar',
+      'pt': 'Adicionar Membro',
+    },
+    'o4aksuns': {
+      'en': 'All',
+      'es': 'Todo',
+      'pt': 'Todos',
+    },
+    'lyuuixqj': {
+      'en': 'Name',
+      'es': 'Nombre',
+      'pt': 'Nome',
+    },
+    'ojxnuhlr': {
+      'en': 'Facction',
+      'es': 'Nombre común',
+      'pt': 'Vulgo',
+    },
+    'es8ud6ei': {
+      'en': 'Common name',
+      'es': 'Nombre común',
+      'pt': 'Vulgo',
+    },
+    '7siq4kx2': {
+      'en': 'Status',
+      'es': 'Facción',
+      'pt': 'Facção',
+    },
+    '4em6l00i': {
+      'en': 'James Wiseman',
+      'es': '',
+      'pt': '',
+    },
+    'kwqo5hpr': {
+      'en': 'Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    '696m1zby': {
+      'en': 'ACME Co.',
+      'es': '',
+      'pt': '',
+    },
+    'qml66lhq': {
+      'en': 'ACME Co.',
+      'es': '',
+      'pt': '',
+    },
+    'urum7mda': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'h8pz8gyu': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    'syoq4mtg': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    'qus157u9': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'ivhuy6pu': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'ydmma5zo': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    '1as8uqyv': {
+      'en': 'Elena Williams',
+      'es': '',
+      'pt': '',
+    },
+    'eou42bl2': {
+      'en': 'Head of Product & Innovation',
+      'es': '',
+      'pt': '',
+    },
+    'sqi64ut8': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'akife5e8': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'eg6ny09p': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'a1co340j': {
+      'en': 'Greg Brown',
+      'es': '',
+      'pt': '',
+    },
+    'h5yfswcb': {
+      'en': 'Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    's59qjbcz': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'i6xj6jga': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'xmji2tzo': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'gfgn7g50': {
+      'en': 'June Williamson',
+      'es': '',
+      'pt': '',
+    },
+    'co2x60pp': {
+      'en': 'Sr. Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    'kf5dbgnh': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    'a23tf68r': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    'wzosxpd5': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'y92cmj40': {
+      'en': 'June Williamson',
+      'es': '',
+      'pt': '',
+    },
+    'b5k60sfv': {
+      'en': 'Sr. Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    'ru9cbxvp': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    '1c4nroxz': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    'e7pmymkr': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    '1b3ccr4v': {
+      'en': 'For Faction',
+      'es': 'Por facción',
+      'pt': 'Por Facção',
+    },
+    '0rsvv9uz': {
+      'en': 'Name',
+      'es': 'Nombre',
+      'pt': 'Nome',
+    },
+    '68gboza2': {
+      'en': 'Title',
+      'es': 'Nombre común',
+      'pt': 'Vulgo',
+    },
+    '2u8x2sq8': {
+      'en': 'Company',
+      'es': 'Compañía',
+      'pt': 'Empresa',
+    },
+    '7gyw39bi': {
+      'en': 'Status',
+      'es': 'Estado',
+      'pt': 'Status',
+    },
+    'd4ipkpdq': {
+      'en': 'ACME Co.',
+      'es': '',
+      'pt': '',
+    },
+    'vf8k6phv': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    'd9noebaw': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    'zyb1916s': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'r5c3rtov': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'p5shben4': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    '0rg64768': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    'lplffai2': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    '94yzm47j': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'cvmap13n': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '3zbm2xph': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    '8l2qut91': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    '80qa6qra': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    'oh3sdlax': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'v2ssw212': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '3jh9yl9c': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    'flpnnezl': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    'nezicjcs': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    '8vxwjdco': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '1kxy1ulg': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'x0azbcyn': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    '2v8x4m17': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    'kvgy6hc5': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    'opcufzk6': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '8o579w6x': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'da3xanaa': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    'np205uep': {
+      'en': 'Ignacious Rodriguez',
+      'es': '',
+      'pt': '',
+    },
+    '69l3b4mz': {
+      'en': 'Sales Manager',
+      'es': '',
+      'pt': '',
+    },
+    '73orhvn4': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'id8q59ht': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '903o9k81': {
+      'en': 'New',
+      'es': '',
+      'pt': '',
+    },
+    'o6z4acb7': {
+      'en': 'Leaders',
+      'es': 'Líderes',
+      'pt': 'Líderes',
+    },
+    'l5l3qp02': {
+      'en': 'Name',
+      'es': 'Nombre',
+      'pt': 'Nome',
+    },
+    '3pg0v198': {
+      'en': 'Title',
+      'es': '',
+      'pt': '',
+    },
+    '6xop9wnq': {
+      'en': 'Company',
+      'es': '',
+      'pt': '',
+    },
+    'cqwn3ezt': {
+      'en': 'Company',
+      'es': '',
+      'pt': '',
+    },
+    '2jbsz4tt': {
+      'en': 'Status',
+      'es': '',
+      'pt': '',
+    },
+    '0s61gurc': {
+      'en': 'ACME Co.',
+      'es': '',
+      'pt': '',
+    },
+    '2jwhxg80': {
+      'en': 'ACME Co.',
+      'es': '',
+      'pt': '',
+    },
+    'ca0d1ekl': {
+      'en': 'Elena Williams',
+      'es': '',
+      'pt': '',
+    },
+    '7t2aimjk': {
+      'en': 'Head of Product & Innovation',
+      'es': '',
+      'pt': '',
+    },
+    'blvgbicg': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    '6i3w7due': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'pzpdu7a5': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'n6of3in4': {
+      'en': 'Greg Brown',
+      'es': '',
+      'pt': '',
+    },
+    'y880ly4o': {
+      'en': 'Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    'soalb0fv': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'p0dl07t8': {
+      'en': 'Robin HQ',
+      'es': '',
+      'pt': '',
+    },
+    'dt64r4l1': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'f4waobhl': {
+      'en': 'June Williamson',
+      'es': '',
+      'pt': '',
+    },
+    'wzp8sq06': {
+      'en': 'Sr. Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    '4rerp8ml': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    'v0329wsw': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    'la3g3y70': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'nqcq2kt5': {
+      'en': 'June Williamson',
+      'es': '',
+      'pt': '',
+    },
+    'ghi83nvr': {
+      'en': 'Sr. Account Manager',
+      'es': '',
+      'pt': '',
+    },
+    'gd7ur4we': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    '2jd8ake4': {
+      'en': 'HealthAi',
+      'es': '',
+      'pt': '',
+    },
+    '4l71h0ip': {
+      'en': 'Contacted',
+      'es': '',
+      'pt': '',
+    },
+    'zzjge5y5': {
+      'en': 'Customers',
+      'es': '',
+      'pt': '',
+    },
+    'rhgiw7n8': {
+      'en': '__',
+      'es': '',
+      'pt': '',
     },
   },
   // modal_success
@@ -1455,7 +1978,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Deixa para lá',
     },
   },
-  // modal_Message
+  // modal_message
   {
     'wa4vkne2': {
       'en': 'Congratulations!',
@@ -1481,7 +2004,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Continuar',
     },
   },
-  // modal_Welcome
+  // modal_welcome
   {
     '00flvi93': {
       'en': 'Congratulations!',
@@ -1499,7 +2022,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Continuar',
     },
   },
-  // createComment
+  // create_comment
   {
     'l2jlnhye': {
       'en': 'Create Note',
@@ -1527,7 +2050,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Criar nota',
     },
   },
-  // mobileNav
+  // mobile_nav
   {
     'sy0pxvma': {
       'en': 'Dashboard',
@@ -1555,7 +2078,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Perfil',
     },
   },
-  // webNav
+  // web_nav
   {
     'xai8ocja': {
       'en': 'Search',
@@ -1588,7 +2111,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Perfil',
     },
   },
-  // commandPalette
+  // command_palette
   {
     'jt9g5o8v': {
       'en': 'Search platform...',
@@ -1626,7 +2149,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Novo cliente',
     },
   },
-  // editProfilePhoto
+  // edit_profile_photo
   {
     '6bnefz1c': {
       'en': 'Change Photo',
@@ -1652,7 +2175,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Salvar alterações',
     },
   },
-  // user_Details_main
+  // user_details_main
   {
     '918p9oc4': {
       'en': 'Customer Name',
@@ -1751,7 +2274,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Ver empresa',
     },
   },
-  // dropdown_UserEdit
+  // dropdown_user_edit
   {
     'vqk7im3j': {
       'en': 'Options',
@@ -1779,7 +2302,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Excluir',
     },
   },
-  // modal_CreateProject
+  // modal_create_project
   {
     '5tdm3cpv': {
       'en': 'Create Project',
@@ -1818,7 +2341,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '32kj9709': {
       'en': 'Please choose an option from the dropdown',
-      'es': 'Por favor, seleccione una opción del menú desplegable',
+      'es': 'Por favor, seleccione una opción del menú desplegable.',
       'pt': 'Selecione uma opção no menu suspenso',
     },
     'wfu6up0n': {
@@ -1832,7 +2355,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Selecione uma opção no menu suspenso',
     },
   },
-  // projectDetails_alt
+  // project_details_alt
   {
     'zgyw4s95': {
       'en': 'ACME Co.',
@@ -2042,7 +2565,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Detalhes do Projeto',
     },
   },
-  // modal_create_Company
+  // modal_create_company
   {
     'v7w6sfgf': {
       'en': 'Create Company Profile',
@@ -2074,7 +2597,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nrfx3n3y': {
       'en': 'Enter in your website without \"https://\"...',
-      'es': 'Ingresa a tu sitio web sin \"https://\"...',
+      'es': 'Ingresa en tu sitio web sin \"https://\"...',
       'pt': 'Entre no seu site sem \"https://\"...',
     },
     'p9crjkw6': {
@@ -2088,7 +2611,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Criar empresa',
     },
   },
-  // modal_inviteUser
+  // modal_invite_user
   {
     '2c6w1mkp': {
       'en': 'Edit User Details',
@@ -2161,7 +2684,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Enviar convites',
     },
   },
-  // modal_enterPin
+  // modal_enter_pin
   {
     'w63lhi44': {
       'en': 'Enter your PIN below',
@@ -2184,7 +2707,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Verificar código',
     },
   },
-  // modal_shareProject
+  // modal_share_project
   {
     '4tx2ru39': {
       'en': 'Share your project',
@@ -2252,45 +2775,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Enviar convites',
     },
   },
-  // Modal_Add_usersList
-  {
-    'u8eoldhj': {
-      'en': 'Invite your Team',
-      'es': 'Invita a tu equipo',
-      'pt': 'Convide sua equipe',
-    },
-    'z2uzep65': {
-      'en': 'Your project has been created, now invite your team to continue.',
-      'es': 'Tu proyecto ha sido creado, ahora invita a tu equipo a continuar.',
-      'pt': 'Seu projeto foi criado, agora convide sua equipe para continuar.',
-    },
-    'dlpajrga': {
-      'en': 'Email address...',
-      'es': 'Dirección de correo electrónico...',
-      'pt': 'Endereço de email...',
-    },
-    'timt0a9e': {
-      'en': 'email@domainname.com',
-      'es': 'correo electrónico@nombrededominio.com',
-      'pt': 'email@nomedodomínio.com',
-    },
-    'haz2ntfz': {
-      'en': 'email@domainname.com',
-      'es': 'correo electrónico@nombrededominio.com',
-      'pt': 'email@nomedodomínio.com',
-    },
-    'd9dnbwow': {
-      'en': 'Cancel',
-      'es': 'Cancelar',
-      'pt': 'Cancelar',
-    },
-    'wv1opxlo': {
-      'en': 'Send Invites',
-      'es': 'Enviar invitaciones',
-      'pt': 'Enviar convites',
-    },
-  },
-  // modal_profile_Details
+  // modal_profile_details
   {
     'xt43uwzp': {
       'en': 'Profile Details',
@@ -2358,7 +2843,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Fechar',
     },
   },
-  // modal_profile_Edit
+  // modal_profile_edit
   {
     'qs8serr4': {
       'en': 'Edit Profile',

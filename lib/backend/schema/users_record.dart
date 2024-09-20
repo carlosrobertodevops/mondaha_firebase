@@ -50,11 +50,6 @@ class UsersRecord extends FirestoreRecord {
   DateTime? get lastActive => _lastActive;
   bool hasLastActive() => _lastActive != null;
 
-  // "status" field.
-  String? _status;
-  String get status => _status ?? '';
-  bool hasStatus() => _status != null;
-
   // "bio" field.
   String? _bio;
   String get bio => _bio ?? '';
@@ -65,11 +60,6 @@ class UsersRecord extends FirestoreRecord {
   DateTime? get createdAt => _createdAt;
   bool hasCreatedAt() => _createdAt != null;
 
-  // "tipo_users" field.
-  DocumentReference? _tipoUsers;
-  DocumentReference? get tipoUsers => _tipoUsers;
-  bool hasTipoUsers() => _tipoUsers != null;
-
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -78,10 +68,8 @@ class UsersRecord extends FirestoreRecord {
     _createdTime = snapshotData['created_time'] as DateTime?;
     _phoneNumber = snapshotData['phone_number'] as String?;
     _lastActive = snapshotData['lastActive'] as DateTime?;
-    _status = snapshotData['status'] as String?;
     _bio = snapshotData['bio'] as String?;
     _createdAt = snapshotData['createdAt'] as DateTime?;
-    _tipoUsers = snapshotData['tipo_users'] as DocumentReference?;
   }
 
   static CollectionReference get collection =>
@@ -126,10 +114,8 @@ Map<String, dynamic> createUsersRecordData({
   DateTime? createdTime,
   String? phoneNumber,
   DateTime? lastActive,
-  String? status,
   String? bio,
   DateTime? createdAt,
-  DocumentReference? tipoUsers,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -140,10 +126,8 @@ Map<String, dynamic> createUsersRecordData({
       'created_time': createdTime,
       'phone_number': phoneNumber,
       'lastActive': lastActive,
-      'status': status,
       'bio': bio,
       'createdAt': createdAt,
-      'tipo_users': tipoUsers,
     }.withoutNulls,
   );
 
@@ -162,10 +146,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.createdTime == e2?.createdTime &&
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.lastActive == e2?.lastActive &&
-        e1?.status == e2?.status &&
         e1?.bio == e2?.bio &&
-        e1?.createdAt == e2?.createdAt &&
-        e1?.tipoUsers == e2?.tipoUsers;
+        e1?.createdAt == e2?.createdAt;
   }
 
   @override
@@ -177,10 +159,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.createdTime,
         e?.phoneNumber,
         e?.lastActive,
-        e?.status,
         e?.bio,
-        e?.createdAt,
-        e?.tipoUsers
+        e?.createdAt
       ]);
 
   @override

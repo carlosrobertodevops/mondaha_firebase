@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 export 'package:go_router/go_router.dart';
@@ -72,72 +72,62 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const NavBarPage() : const AuthLoginWidget(),
+          appStateNotifier.loggedIn ? const MainHomeWidget() : const AuthLoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const NavBarPage() : const AuthLoginWidget(),
+              appStateNotifier.loggedIn ? const MainHomeWidget() : const AuthLoginWidget(),
           routes: [
             FFRoute(
-              name: 'auth_Login',
+              name: 'auth_login',
               path: 'authLogin',
               builder: (context, params) => const AuthLoginWidget(),
             ),
             FFRoute(
-              name: 'forgotPassword',
+              name: 'forgot_password',
               path: 'forgotPassword',
               requireAuth: true,
               builder: (context, params) => const ForgotPasswordWidget(),
             ),
             FFRoute(
-              name: 'auth_Create',
+              name: 'auth_create',
               path: 'authCreate',
               builder: (context, params) => const AuthCreateWidget(),
             ),
             FFRoute(
-              name: 'Main_Home',
+              name: 'main_home',
               path: 'mainHome',
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? const NavBarPage(initialPage: 'Main_Home')
-                  : const MainHomeWidget(),
+              builder: (context, params) => const MainHomeWidget(),
             ),
             FFRoute(
-              name: 'Main_customerList',
-              path: 'mainCustomerList',
+              name: 'main_membros_list',
+              path: 'mainMembrosList',
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? const NavBarPage(initialPage: 'Main_customerList')
-                  : const MainCustomerListWidget(),
+              builder: (context, params) => const MainMembrosListWidget(),
             ),
             FFRoute(
-              name: 'Main_Contracts',
-              path: 'mainContracts',
+              name: 'main_faccoes',
+              path: 'mainFaccoes',
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? const NavBarPage(initialPage: 'Main_Contracts')
-                  : const MainContractsWidget(),
+              builder: (context, params) => const MainFaccoesWidget(),
             ),
             FFRoute(
               name: 'Main_messages',
               path: 'mainMessages',
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? const NavBarPage(initialPage: 'Main_messages')
-                  : const MainMessagesWidget(),
+              builder: (context, params) => const MainMessagesWidget(),
             ),
             FFRoute(
               name: 'Main_profilePage',
               path: 'mainProfilePage',
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? const NavBarPage(initialPage: 'Main_profilePage')
-                  : const MainProfilePageWidget(),
+              builder: (context, params) => const MainProfilePageWidget(),
             ),
             FFRoute(
-              name: 'userDetails',
+              name: 'user_details',
               path: 'userDetails',
               requireAuth: true,
               builder: (context, params) => UserDetailsWidget(
@@ -148,40 +138,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'editProfile',
+              name: 'edit_profile',
               path: 'editProfile',
               requireAuth: true,
               builder: (context, params) => const EditProfileWidget(),
             ),
             FFRoute(
-              name: 'projectDetailsHealthAi',
+              name: 'project_details_health_ai',
               path: 'projectDetailsHealthAi',
               requireAuth: true,
               builder: (context, params) => const ProjectDetailsHealthAiWidget(),
             ),
             FFRoute(
-              name: 'projectDetails',
+              name: 'project_details',
               path: 'projectDetails',
               requireAuth: true,
               builder: (context, params) => const ProjectDetailsWidget(),
             ),
             FFRoute(
-              name: 'searchPage',
+              name: 'search_page',
               path: 'searchPage',
               requireAuth: true,
               builder: (context, params) => const SearchPageWidget(),
             ),
             FFRoute(
-              name: 'messagesDetails',
+              name: 'messages_details',
               path: 'messagesDetails',
               requireAuth: true,
               builder: (context, params) => const MessagesDetailsWidget(),
             ),
             FFRoute(
-              name: 'searchPageMembros',
-              path: 'searchPageMembros',
+              name: 'search_membros',
+              path: 'searchMembros',
               requireAuth: true,
-              builder: (context, params) => const SearchPageMembrosWidget(),
+              builder: (context, params) => const SearchMembrosWidget(),
+            ),
+            FFRoute(
+              name: 'main_membros_list_all',
+              path: 'mainMembrosListAll',
+              requireAuth: true,
+              builder: (context, params) => const MainMembrosListAllWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -369,10 +365,14 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Container(
-                  color: Colors.transparent,
-                  child: Image.asset(
-                    'assets/images/chegii-sspal.png',
-                    fit: BoxFit.fitWidth,
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/mondaha01-removebg-preview.png',
+                      width: 300.0,
+                      height: 300.0,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 )
               : page;

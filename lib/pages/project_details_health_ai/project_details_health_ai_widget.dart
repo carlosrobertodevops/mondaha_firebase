@@ -31,7 +31,7 @@ class _ProjectDetailsHealthAiWidgetState
     _model = createModel(context, () => ProjectDetailsHealthAiModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'projectDetailsHealthAi'});
+        parameters: {'screen_name': 'project_details_health_ai'});
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -521,9 +521,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
                                               fit: BoxFit.fitWidth,
                                             ),
                                           ),
@@ -539,9 +537,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
                                               fit: BoxFit.fitWidth,
                                             ),
                                           ),
@@ -557,9 +553,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1598346762291-aee88549193f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1598346762291-aee88549193f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
                                               fit: BoxFit.fitHeight,
                                             ),
                                           ),
@@ -733,9 +727,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYwfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -751,9 +743,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ0fHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -769,9 +759,7 @@ class _ProjectDetailsHealthAiWidgetState
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
-                                              getCORSProxyUrl(
-                                                'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                              ),
+                                              'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUxfHx1c2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                               fit: BoxFit.fitHeight,
                                             ),
                                           ),

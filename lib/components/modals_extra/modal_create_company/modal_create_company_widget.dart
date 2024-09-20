@@ -298,9 +298,7 @@ class _ModalCreateCompanyWidgetState extends State<ModalCreateCompanyWidget>
                                           borderRadius:
                                               BorderRadius.circular(10.0),
                                           child: Image.network(
-                                            getCORSProxyUrl(
-                                              'https://picsum.photos/seed/123/600',
-                                            ),
+                                            'https://picsum.photos/seed/123/600',
                                             width: 300.0,
                                             height: 200.0,
                                             fit: BoxFit.cover,

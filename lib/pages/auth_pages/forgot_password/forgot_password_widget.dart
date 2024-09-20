@@ -31,7 +31,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
     _model = createModel(context, () => ForgotPasswordModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'forgotPassword'});
+        parameters: {'screen_name': 'forgot_password'});
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 

@@ -142,9 +142,7 @@ class _CreateCommentWidgetState extends State<CreateCommentWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(40.0),
                                 child: Image.network(
-                                  getCORSProxyUrl(
-                                    'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-                                  ),
+                                  'https://images.unsplash.com/photo-1610737241336-371badac3b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
                                   width: 40.0,
                                   height: 40.0,
                                   fit: BoxFit.cover,

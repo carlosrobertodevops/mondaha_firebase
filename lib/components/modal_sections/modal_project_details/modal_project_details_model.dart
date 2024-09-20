@@ -11,7 +11,7 @@ class ModalProjectDetailsModel
 
   ///  State fields for stateful widgets in this component.
 
-  // Model for projectDetails_alt component.
+  // Model for project_details_alt component.
   late ProjectDetailsAltModel projectDetailsAltModel;
 
   @override

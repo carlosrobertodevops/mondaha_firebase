@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class MainMessagesModel extends FlutterFlowModel<MainMessagesWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Model for webNav component.
+  // Model for web_nav component.
   late WebNavModel webNavModel;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode1;

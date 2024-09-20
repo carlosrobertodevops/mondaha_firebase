@@ -297,9 +297,7 @@ class _ModalCreateProjectWidgetState extends State<ModalCreateProjectWidget>
                                                   const Duration(milliseconds: 500),
                                               fadeOutDuration:
                                                   const Duration(milliseconds: 500),
-                                              imageUrl: getCORSProxyUrl(
-                                                '',
-                                              ),
+                                              imageUrl: '',
                                               width: double.infinity,
                                               height: double.infinity,
                                               fit: BoxFit.cover,

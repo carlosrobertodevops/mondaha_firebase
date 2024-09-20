@@ -286,11 +286,9 @@ class _MainProfilePageWidgetState extends State<MainProfilePageWidget>
                                                   const Duration(milliseconds: 500),
                                               fadeOutDuration:
                                                   const Duration(milliseconds: 500),
-                                              imageUrl: getCORSProxyUrl(
-                                                valueOrDefault<String>(
-                                                  currentUserPhoto,
-                                                  'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                ),
+                                              imageUrl: valueOrDefault<String>(
+                                                currentUserPhoto,
+                                                'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                               ),
                                               width: 44.0,
                                               height: 44.0,
@@ -407,7 +405,7 @@ class _MainProfilePageWidgetState extends State<MainProfilePageWidget>
                                       logFirebaseEvent(
                                           'MAIN_PROFILE_Container_geiuas93_ON_TAP');
 
-                                      context.pushNamed('forgotPassword');
+                                      context.pushNamed('forgot_password');
                                     },
                                     child: AnimatedContainer(
                                       duration: const Duration(milliseconds: 100),
@@ -522,7 +520,7 @@ class _MainProfilePageWidgetState extends State<MainProfilePageWidget>
                                             },
                                           );
                                         } else {
-                                          context.pushNamed('editProfile');
+                                          context.pushNamed('edit_profile');
                                         }
                                       },
                                       child: AnimatedContainer(
@@ -1241,7 +1239,7 @@ class _MainProfilePageWidgetState extends State<MainProfilePageWidget>
                                               'MAIN_PROFILE_LOG_OUT_BTN_ON_TAP');
 
                                           context.pushNamed(
-                                            'auth_Login',
+                                            'auth_login',
                                             extra: <String, dynamic>{
                                               kTransitionInfoKey:
                                                   const TransitionInfo(

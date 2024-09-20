@@ -298,7 +298,7 @@ class _ModalWelcomeWidgetState extends State<ModalWelcomeWidget>
                                         'MODAL_WELCOME_COMP_CONTINUE_BTN_ON_TAP');
 
                                     context.pushNamed(
-                                      'Main_Home',
+                                      'main_home',
                                       extra: <String, dynamic>{
                                         kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,

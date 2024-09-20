@@ -83,7 +83,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                   logFirebaseEvent('MOBILE_NAV_COMP_Column_5op2fdni_ON_TAP');
 
                   context.pushNamed(
-                    'Main_Home',
+                    'main_home',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
@@ -177,7 +177,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                   logFirebaseEvent('MOBILE_NAV_COMP_Column_5root8xc_ON_TAP');
 
                   context.pushNamed(
-                    'Main_customerList',
+                    'main_membros_list',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
@@ -224,7 +224,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                   logFirebaseEvent('MOBILE_NAV_COMP_Column_yvpwce9x_ON_TAP');
 
                   context.pushNamed(
-                    'Main_Contracts',
+                    'main_faccoes',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,

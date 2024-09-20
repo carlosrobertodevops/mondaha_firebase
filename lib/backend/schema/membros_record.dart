@@ -36,11 +36,23 @@ class MembrosRecord extends FirestoreRecord {
   String get faccao => _faccao ?? '';
   bool hasFaccao() => _faccao != null;
 
+  // "funcao" field.
+  List<String>? _funcao;
+  List<String> get funcao => _funcao ?? const [];
+  bool hasFuncao() => _funcao != null;
+
+  // "user_id" field.
+  String? _userId;
+  String get userId => _userId ?? '';
+  bool hasUserId() => _userId != null;
+
   void _initializeFields() {
     _nomeCompleto = snapshotData['nome_completo'] as String?;
     _vulgo = getDataList(snapshotData['vulgo']);
     _photoPath = snapshotData['photo_path'] as String?;
     _faccao = snapshotData['faccao'] as String?;
+    _funcao = getDataList(snapshotData['funcao']);
+    _userId = snapshotData['user_id'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -82,12 +94,14 @@ Map<String, dynamic> createMembrosRecordData({
   String? nomeCompleto,
   String? photoPath,
   String? faccao,
+  String? userId,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'nome_completo': nomeCompleto,
       'photo_path': photoPath,
       'faccao': faccao,
+      'user_id': userId,
     }.withoutNulls,
   );
 
@@ -103,12 +117,20 @@ class MembrosRecordDocumentEquality implements Equality<MembrosRecord> {
     return e1?.nomeCompleto == e2?.nomeCompleto &&
         listEquality.equals(e1?.vulgo, e2?.vulgo) &&
         e1?.photoPath == e2?.photoPath &&
-        e1?.faccao == e2?.faccao;
+        e1?.faccao == e2?.faccao &&
+        listEquality.equals(e1?.funcao, e2?.funcao) &&
+        e1?.userId == e2?.userId;
   }
 
   @override
-  int hash(MembrosRecord? e) => const ListEquality()
-      .hash([e?.nomeCompleto, e?.vulgo, e?.photoPath, e?.faccao]);
+  int hash(MembrosRecord? e) => const ListEquality().hash([
+        e?.nomeCompleto,
+        e?.vulgo,
+        e?.photoPath,
+        e?.faccao,
+        e?.funcao,
+        e?.userId
+      ]);
 
   @override
   bool isValidKey(Object? o) => o is MembrosRecord;

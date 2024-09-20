@@ -30,10 +30,16 @@ class LogsRecord extends FirestoreRecord {
   String get modulo => _modulo ?? '';
   bool hasModulo() => _modulo != null;
 
+  // "id" field.
+  String? _id;
+  String get id => _id ?? '';
+  bool hasId() => _id != null;
+
   void _initializeFields() {
     _user = snapshotData['user'] as DocumentReference?;
     _data = snapshotData['data'] as DateTime?;
     _modulo = snapshotData['modulo'] as String?;
+    _id = snapshotData['id'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -74,12 +80,14 @@ Map<String, dynamic> createLogsRecordData({
   DocumentReference? user,
   DateTime? data,
   String? modulo,
+  String? id,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'user': user,
       'data': data,
       'modulo': modulo,
+      'id': id,
     }.withoutNulls,
   );
 
@@ -93,12 +101,13 @@ class LogsRecordDocumentEquality implements Equality<LogsRecord> {
   bool equals(LogsRecord? e1, LogsRecord? e2) {
     return e1?.user == e2?.user &&
         e1?.data == e2?.data &&
-        e1?.modulo == e2?.modulo;
+        e1?.modulo == e2?.modulo &&
+        e1?.id == e2?.id;
   }
 
   @override
   int hash(LogsRecord? e) =>
-      const ListEquality().hash([e?.user, e?.data, e?.modulo]);
+      const ListEquality().hash([e?.user, e?.data, e?.modulo, e?.id]);
 
   @override
   bool isValidKey(Object? o) => o is LogsRecord;

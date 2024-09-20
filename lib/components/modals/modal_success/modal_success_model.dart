@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class ModalSuccessModel extends FlutterFlowModel<ModalSuccessWidget> {
   ///  State fields for stateful widgets in this component.
 
-  // Model for main_Logo component.
+  // Model for main_logo component.
   late MainLogoModel mainLogoModel;
 
   @override

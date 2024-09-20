@@ -24,7 +24,7 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
     _model = createModel(context, () => ProjectDetailsModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'projectDetails'});
+        parameters: {'screen_name': 'project_details'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 

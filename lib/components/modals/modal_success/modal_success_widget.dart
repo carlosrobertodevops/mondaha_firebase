@@ -337,7 +337,7 @@ class _ModalSuccessWidgetState extends State<ModalSuccessWidget>
                               logFirebaseEvent(
                                   'MODAL_SUCCESS_Container_jo79rhap_ON_TAP');
 
-                              context.pushNamed('userDetails');
+                              context.pushNamed('user_details');
                             },
                             child: Container(
                               width: double.infinity,
@@ -366,9 +366,7 @@ class _ModalSuccessWidgetState extends State<ModalSuccessWidget>
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
-                                        getCORSProxyUrl(
-                                          'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
-                                        ),
+                                        'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
                                         width: 70.0,
                                         height: 70.0,
                                         fit: BoxFit.cover,

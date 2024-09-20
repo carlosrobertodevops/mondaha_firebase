@@ -8,20 +8,6 @@ service cloud.firestore {
       allow delete: if request.auth.uid == document;
     }
 
-    match /Transactions/{document} {
-      allow create: if true;
-      allow read: if true;
-      allow write: if false;
-      allow delete: if false;
-    }
-
-    match /leadCapture/{document} {
-      allow create: if true;
-      allow read: if true;
-      allow write: if false;
-      allow delete: if false;
-    }
-
     match /agencia/{document} {
       allow create: if true;
       allow read: if true;
@@ -58,6 +44,13 @@ service cloud.firestore {
     }
 
     match /logs/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /usuarios/{document} {
       allow create: if true;
       allow read: if true;
       allow write: if false;
