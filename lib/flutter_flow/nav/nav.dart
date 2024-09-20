@@ -371,7 +371,7 @@ class FFRoute {
                       'assets/images/mondaha01-removebg-preview.png',
                       width: 300.0,
                       height: 300.0,
-                      fit: BoxFit.contain,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 )

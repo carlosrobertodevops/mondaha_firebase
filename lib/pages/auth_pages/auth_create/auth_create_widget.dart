@@ -301,6 +301,9 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .displayMediumFamily,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
@@ -344,6 +347,9 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
                                                       .displaySmallFamily,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
                                               letterSpacing: 0.0,
                                               useGoogleFonts: GoogleFonts
                                                       .asMap()
@@ -367,6 +373,9 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLargeFamily,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 letterSpacing: 0.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()

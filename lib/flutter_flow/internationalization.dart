@@ -235,7 +235,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'l2xxy1gf': {
       'en': 'Get Started',
       'es': 'Empezar',
-      'pt': 'Começar',
+      'pt': 'Cadastre sua senha de acesso',
     },
     '59g0bt96': {
       'en': 'Use the form below to get started.',
@@ -2109,6 +2109,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Profile',
       'es': 'Perfil',
       'pt': 'Perfil',
+    },
+    'gwg6xxsg': {
+      'en': 'Exit',
+      'es': 'Salida',
+      'pt': 'Saír',
     },
   },
   // command_palette
