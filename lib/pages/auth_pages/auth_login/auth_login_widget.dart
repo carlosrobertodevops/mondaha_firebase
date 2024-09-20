@@ -253,14 +253,12 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                FlutterFlowTheme.of(context).overlay0,
-                FlutterFlowTheme.of(context).overlay
-              ],
-              stops: const [0.3, 1.0],
-              begin: const AlignmentDirectional(1.0, -1.0),
-              end: const AlignmentDirectional(-1.0, 1.0),
+            color: FlutterFlowTheme.of(context).secondaryBackground,
+            borderRadius: const BorderRadius.only(
+              bottomLeft: Radius.circular(0.0),
+              bottomRight: Radius.circular(0.0),
+              topLeft: Radius.circular(0.0),
+              topRight: Radius.circular(0.0),
             ),
           ),
           alignment: const AlignmentDirectional(0.0, 0.0),
