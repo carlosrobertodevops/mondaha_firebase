@@ -88,7 +88,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'forgot_password',
               path: 'forgotPassword',
-              requireAuth: true,
               builder: (context, params) => const ForgotPasswordWidget(),
             ),
             FFRoute(
@@ -99,37 +98,31 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'main_home',
               path: 'mainHome',
-              requireAuth: true,
               builder: (context, params) => const MainHomeWidget(),
             ),
             FFRoute(
               name: 'main_membros_list',
               path: 'mainMembrosList',
-              requireAuth: true,
               builder: (context, params) => const MainMembrosListWidget(),
             ),
             FFRoute(
               name: 'main_faccoes',
               path: 'mainFaccoes',
-              requireAuth: true,
               builder: (context, params) => const MainFaccoesWidget(),
             ),
             FFRoute(
               name: 'Main_messages',
               path: 'mainMessages',
-              requireAuth: true,
               builder: (context, params) => const MainMessagesWidget(),
             ),
             FFRoute(
               name: 'Main_profilePage',
               path: 'mainProfilePage',
-              requireAuth: true,
               builder: (context, params) => const MainProfilePageWidget(),
             ),
             FFRoute(
               name: 'user_details',
               path: 'userDetails',
-              requireAuth: true,
               builder: (context, params) => UserDetailsWidget(
                 showBack: params.getParam(
                   'showBack',
@@ -140,43 +133,36 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'edit_profile',
               path: 'editProfile',
-              requireAuth: true,
               builder: (context, params) => const EditProfileWidget(),
             ),
             FFRoute(
               name: 'project_details_health_ai',
               path: 'projectDetailsHealthAi',
-              requireAuth: true,
               builder: (context, params) => const ProjectDetailsHealthAiWidget(),
             ),
             FFRoute(
               name: 'project_details',
               path: 'projectDetails',
-              requireAuth: true,
               builder: (context, params) => const ProjectDetailsWidget(),
             ),
             FFRoute(
               name: 'search_page',
               path: 'searchPage',
-              requireAuth: true,
               builder: (context, params) => const SearchPageWidget(),
             ),
             FFRoute(
               name: 'messages_details',
               path: 'messagesDetails',
-              requireAuth: true,
               builder: (context, params) => const MessagesDetailsWidget(),
             ),
             FFRoute(
               name: 'search_membros',
               path: 'searchMembros',
-              requireAuth: true,
               builder: (context, params) => const SearchMembrosWidget(),
             ),
             FFRoute(
               name: 'main_membros_list_all',
               path: 'mainMembrosListAll',
-              requireAuth: true,
               builder: (context, params) => const MainMembrosListAllWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
