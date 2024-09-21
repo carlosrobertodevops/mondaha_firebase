@@ -117,55 +117,19 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         child: Padding(
                           padding: const EdgeInsets.all(2.0),
                           child: AuthUserStreamWidget(
-                            builder: (context) =>
-                                StreamBuilder<List<MembrosRecord>>(
-                              stream: queryMembrosRecord(
-                                singleRecord: true,
+                            builder: (context) => Container(
+                              width: 90.0,
+                              height: 90.0,
+                              clipBehavior: Clip.antiAlias,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
                               ),
-                              builder: (context, snapshot) {
-                                // Customize what your widget looks like when it's loading.
-                                if (!snapshot.hasData) {
-                                  return Center(
-                                    child: SizedBox(
-                                      width: 50.0,
-                                      height: 50.0,
-                                      child: CircularProgressIndicator(
-                                        valueColor:
-                                            AlwaysStoppedAnimation<Color>(
-                                          FlutterFlowTheme.of(context).primary,
-                                        ),
-                                      ),
-                                    ),
-                                  );
-                                }
-                                List<MembrosRecord>
-                                    circleImageMembrosRecordList =
-                                    snapshot.data!;
-                                // Return an empty Container when the item does not exist.
-                                if (snapshot.data!.isEmpty) {
-                                  return Container();
-                                }
-                                final circleImageMembrosRecord =
-                                    circleImageMembrosRecordList.isNotEmpty
-                                        ? circleImageMembrosRecordList.first
-                                        : null;
-
-                                return Container(
-                                  width: 90.0,
-                                  height: 90.0,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: CachedNetworkImage(
-                                    fadeInDuration: const Duration(milliseconds: 500),
-                                    fadeOutDuration:
-                                        const Duration(milliseconds: 500),
-                                    imageUrl: currentUserPhoto,
-                                    fit: BoxFit.fitWidth,
-                                  ),
-                                );
-                              },
+                              child: CachedNetworkImage(
+                                fadeInDuration: const Duration(milliseconds: 500),
+                                fadeOutDuration: const Duration(milliseconds: 500),
+                                imageUrl: currentUserPhoto,
+                                fit: BoxFit.fitWidth,
+                              ),
                             ),
                           ),
                         ),

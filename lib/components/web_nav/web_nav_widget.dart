@@ -655,7 +655,9 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                                         children: [
                                           Text(
                                             valueOrDefault<String>(
-                                              columnUsuariosRecord.nome,
+                                              columnUsuariosRecord
+                                                  .hasNome()
+                                                  .toString(),
                                               'Nome',
                                             ),
                                             textAlign: TextAlign.start,
@@ -683,7 +685,9 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 valueOrDefault<String>(
-                                                  columnUsuariosRecord.email,
+                                                  columnUsuariosRecord
+                                                      .hasNome()
+                                                      .toString(),
                                                   'user@gmail.com',
                                                 ),
                                                 textAlign: TextAlign.start,
@@ -698,6 +702,7 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primary,
+                                                          fontSize: 10.0,
                                                           letterSpacing: 0.0,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
