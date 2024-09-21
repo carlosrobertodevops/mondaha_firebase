@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/components/main_logo/main_logo_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -895,20 +896,24 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                                 return;
                                               }
 
-                                              context.pushNamedAuth(
-                                                'main_home',
-                                                context.mounted,
-                                                extra: <String, dynamic>{
-                                                  kTransitionInfoKey:
-                                                      const TransitionInfo(
-                                                    hasTransition: true,
-                                                    transitionType:
-                                                        PageTransitionType.fade,
-                                                    duration: Duration(
-                                                        milliseconds: 0),
-                                                  ),
-                                                },
-                                              );
+                                              await UsersRecord.collection
+                                                  .doc(user.uid)
+                                                  .update({
+                                                ...createUsersRecordData(
+                                                  email: '',
+                                                ),
+                                                ...mapToFirestore(
+                                                  {
+                                                    'createdAt': FieldValue
+                                                        .serverTimestamp(),
+                                                    'lastActive': FieldValue
+                                                        .serverTimestamp(),
+                                                  },
+                                                ),
+                                              });
+
+                                              context.goNamedAuth(
+                                                  'main_home', context.mounted);
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
