@@ -744,8 +744,31 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget>
                                             return;
                                           }
 
-                                          context.goNamedAuth(
-                                              'main_home', context.mounted);
+                                          if (currentUserEmail != ''
+                                              ? true
+                                              : true) {
+                                            context.pushNamedAuth(
+                                                'main_home', context.mounted);
+                                          } else {
+                                            await showDialog(
+                                              context: context,
+                                              builder: (alertDialogContext) {
+                                                return AlertDialog(
+                                                  title: const Text('Erro'),
+                                                  content: const Text(
+                                                      'Email não validado'),
+                                                  actions: [
+                                                    TextButton(
+                                                      onPressed: () =>
+                                                          Navigator.pop(
+                                                              alertDialogContext),
+                                                      child: const Text('Ok'),
+                                                    ),
+                                                  ],
+                                                );
+                                              },
+                                            );
+                                          }
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(

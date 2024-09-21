@@ -1,11 +1,9 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/components/main_logo/main_logo_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -896,36 +894,6 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                               if (user == null) {
                                                 return;
                                               }
-
-                                              await UsuariosRecord.collection
-                                                  .doc()
-                                                  .set(createUsuariosRecordData(
-                                                    userId: currentUserUid,
-                                                    email: currentUserEmail,
-                                                  ));
-                                              unawaited(
-                                                () async {
-                                                  await showDialog(
-                                                    context: context,
-                                                    builder:
-                                                        (alertDialogContext) {
-                                                      return AlertDialog(
-                                                        title: const Text('Acesso'),
-                                                        content: const Text(
-                                                            'Informação Salva com sucesso !!!'),
-                                                        actions: [
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext),
-                                                            child: const Text('Ok'),
-                                                          ),
-                                                        ],
-                                                      );
-                                                    },
-                                                  );
-                                                }(),
-                                              );
 
                                               context.pushNamedAuth(
                                                 'main_home',

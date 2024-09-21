@@ -1,7 +1,7 @@
 // Export pages
 export '/pages/auth_pages/auth_login/auth_login_widget.dart'
     show AuthLoginWidget;
-export '/pages/auth_pages/forgot_password/forgot_password_widget.dart'
+export '/pages/forgot_password/forgot_password_widget.dart'
     show ForgotPasswordWidget;
 export '/pages/auth_create/auth_create_widget.dart' show AuthCreateWidget;
 export '/pages/main_home/main_home_widget.dart' show MainHomeWidget;
