@@ -744,8 +744,12 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                                             FFLocalizations.of(context).getText(
                                           'gwg6xxsg' /* Exit */,
                                         ),
+                                        icon: const Icon(
+                                          Icons.output_sharp,
+                                          size: 15.0,
+                                        ),
                                         options: FFButtonOptions(
-                                          width: 100.0,
+                                          width: 70.0,
                                           height: 40.0,
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(

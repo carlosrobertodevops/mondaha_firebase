@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -902,27 +903,44 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget>
                                                     userId: currentUserUid,
                                                     email: currentUserEmail,
                                                   ));
-                                              await showDialog(
-                                                context: context,
-                                                builder: (alertDialogContext) {
-                                                  return AlertDialog(
-                                                    title: const Text('Acesso'),
-                                                    content: const Text(
-                                                        'Informação Salva com sucesso !!!'),
-                                                    actions: [
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext),
-                                                        child: const Text('Ok'),
-                                                      ),
-                                                    ],
+                                              unawaited(
+                                                () async {
+                                                  await showDialog(
+                                                    context: context,
+                                                    builder:
+                                                        (alertDialogContext) {
+                                                      return AlertDialog(
+                                                        title: const Text('Acesso'),
+                                                        content: const Text(
+                                                            'Informação Salva com sucesso !!!'),
+                                                        actions: [
+                                                          TextButton(
+                                                            onPressed: () =>
+                                                                Navigator.pop(
+                                                                    alertDialogContext),
+                                                            child: const Text('Ok'),
+                                                          ),
+                                                        ],
+                                                      );
+                                                    },
                                                   );
-                                                },
+                                                }(),
                                               );
 
-                                              context.goNamedAuth(
-                                                  'main_home', context.mounted);
+                                              context.pushNamedAuth(
+                                                'main_home',
+                                                context.mounted,
+                                                extra: <String, dynamic>{
+                                                  kTransitionInfoKey:
+                                                      const TransitionInfo(
+                                                    hasTransition: true,
+                                                    transitionType:
+                                                        PageTransitionType.fade,
+                                                    duration: Duration(
+                                                        milliseconds: 0),
+                                                  ),
+                                                },
+                                              );
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
