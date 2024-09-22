@@ -4,7 +4,6 @@ import '/components/modals/command_palette/command_palette_widget.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -392,7 +391,7 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                     logFirebaseEvent('WEB_NAV_COMP_bg_color_ON_TAP');
 
                     context.pushNamed(
-                      'Main_messages',
+                      'main_messages',
                       extra: <String, dynamic>{
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
@@ -465,7 +464,7 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                     logFirebaseEvent('WEB_NAV_COMP_bg_color_ON_TAP');
 
                     context.pushNamed(
-                      'Main_profilePage',
+                      'main_profile_page',
                       extra: <String, dynamic>{
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
@@ -527,6 +526,73 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    logFirebaseEvent('WEB_NAV_COMP_bg_color_ON_TAP');
+                    GoRouter.of(context).prepareAuthEvent();
+                    await authManager.signOut();
+                    GoRouter.of(context).clearRedirectLocation();
+
+                    context.goNamedAuth('auth_login', context.mounted);
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: widget.selectedNav == 6
+                          ? FlutterFlowTheme.of(context).alternate
+                          : FlutterFlowTheme.of(context).secondaryBackground,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.exit_to_app_rounded,
+                            color: widget.selectedNav == 6
+                                ? FlutterFlowTheme.of(context).primary
+                                : FlutterFlowTheme.of(context).secondaryText,
+                            size: 28.0,
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                12.0, 0.0, 0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'j1bmm3tm' /* Exit */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .labelLarge
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .labelLargeFamily,
+                                    color: widget.selectedNav == 6
+                                        ? FlutterFlowTheme.of(context)
+                                            .primaryText
+                                        : FlutterFlowTheme.of(context)
+                                            .secondaryText,
+                                    letterSpacing: 0.0,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey(
+                                            FlutterFlowTheme.of(context)
+                                                .labelLargeFamily),
+                                  ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
@@ -534,204 +600,171 @@ class _WebNavWidgetState extends State<WebNavWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
-                        child: FlutterFlowLanguageSelector(
-                          width: double.infinity,
-                          height: 60.0,
-                          backgroundColor:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          borderColor: FlutterFlowTheme.of(context).alternate,
-                          dropdownColor:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          dropdownIconColor:
-                              FlutterFlowTheme.of(context).secondaryText,
-                          borderRadius: 12.0,
-                          textStyle: FlutterFlowTheme.of(context)
-                              .bodyLarge
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyLargeFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyLargeFamily),
-                              ),
-                          hideFlags: false,
-                          flagSize: 24.0,
-                          flagTextGap: 8.0,
-                          currentLanguage:
-                              FFLocalizations.of(context).languageCode,
-                          languages: FFLocalizations.languages(),
-                          onChanged: (lang) => setAppLanguage(context, lang),
-                        ),
+                      FlutterFlowLanguageSelector(
+                        width: double.infinity,
+                        height: 48.0,
+                        backgroundColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        dropdownColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        dropdownIconColor:
+                            FlutterFlowTheme.of(context).secondaryText,
+                        borderRadius: 12.0,
+                        textStyle: FlutterFlowTheme.of(context)
+                            .bodyLarge
+                            .override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyLargeFamily,
+                              letterSpacing: 0.0,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).bodyLargeFamily),
+                            ),
+                        hideFlags: false,
+                        flagSize: 24.0,
+                        flagTextGap: 8.0,
+                        currentLanguage:
+                            FFLocalizations.of(context).languageCode,
+                        languages: FFLocalizations.languages(),
+                        onChanged: (lang) => setAppLanguage(context, lang),
                       ),
                       Divider(
                         height: 12.0,
                         thickness: 2.0,
                         color: FlutterFlowTheme.of(context).alternate,
                       ),
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
                         children: [
-                          Container(
-                            width: 50.0,
-                            height: 50.0,
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).accent1,
-                              borderRadius: BorderRadius.circular(12.0),
-                              border: Border.all(
-                                color: FlutterFlowTheme.of(context).primary,
-                              ),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(2.0),
-                              child: AuthUserStreamWidget(
-                                builder: (context) => ClipRRect(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  child: CachedNetworkImage(
-                                    fadeInDuration: const Duration(milliseconds: 500),
-                                    fadeOutDuration:
-                                        const Duration(milliseconds: 500),
-                                    imageUrl: currentUserPhoto,
-                                    width: 44.0,
-                                    height: 44.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Align(
-                              alignment: const AlignmentDirectional(-1.0, 0.0),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    12.0, 0.0, 0.0, 0.0),
-                                child: SingleChildScrollView(
-                                  child: Column(
+                          Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                logFirebaseEvent(
+                                    'WEB_NAV_COMP_Row_fqtl9ien_ON_TAP');
+
+                                context.pushNamed('edit_profile');
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
                                     children: [
-                                      AuthUserStreamWidget(
-                                        builder: (context) => Text(
-                                          currentUserDisplayName,
-                                          textAlign: TextAlign.start,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                letterSpacing: 0.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
-                                              ),
+                                      Container(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .accent1,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                          border: Border.all(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                          ),
                                         ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 4.0, 0.0, 0.0),
-                                          child: Text(
-                                            currentUserEmail,
-                                            textAlign: TextAlign.start,
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelSmall
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmallFamily,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primary,
-                                                  fontSize: 10.0,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelSmallFamily),
-                                                ),
+                                          padding: const EdgeInsets.all(2.0),
+                                          child: AuthUserStreamWidget(
+                                            builder: (context) => ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                              child: CachedNetworkImage(
+                                                fadeInDuration:
+                                                    const Duration(milliseconds: 500),
+                                                fadeOutDuration:
+                                                    const Duration(milliseconds: 500),
+                                                imageUrl: currentUserPhoto,
+                                                width: 44.0,
+                                                height: 44.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Align(
-                              alignment: const AlignmentDirectional(1.0, 0.0),
-                              child: Container(
-                                width: 100.0,
-                                height: 32.0,
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                ),
-                                child: Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'WEB_NAV_COMP_EXIT_BTN_ON_TAP');
-                                      GoRouter.of(context).prepareAuthEvent();
-                                      await authManager.signOut();
-                                      GoRouter.of(context)
-                                          .clearRedirectLocation();
-
-                                      context.goNamedAuth(
-                                          'auth_login', context.mounted);
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'gwg6xxsg' /* Exit */,
-                                    ),
-                                    icon: const Icon(
-                                      Icons.output_sharp,
-                                      size: 15.0,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 70.0,
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 0.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmallFamily,
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily),
+                                  Expanded(
+                                    child: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            12.0, 0.0, 0.0, 0.0),
+                                        child: SingleChildScrollView(
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              AuthUserStreamWidget(
+                                                builder: (context) => Text(
+                                                  currentUserDisplayName,
+                                                  textAlign: TextAlign.start,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: const AlignmentDirectional(
+                                                    -1.0, 0.0),
+                                                child: Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 4.0, 0.0, 0.0),
+                                                  child: Text(
+                                                    currentUserEmail,
+                                                    textAlign: TextAlign.start,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelSmallFamily,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          fontSize: 10.0,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelSmallFamily),
+                                                        ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
                                           ),
-                                      elevation: 0.0,
-                                      borderRadius: BorderRadius.circular(12.0),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
+                                ],
                               ),
                             ),
                           ),

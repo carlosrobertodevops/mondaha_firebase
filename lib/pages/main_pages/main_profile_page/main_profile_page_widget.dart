@@ -36,7 +36,7 @@ class _MainProfilePageWidgetState extends State<MainProfilePageWidget>
     _model = createModel(context, () => MainProfilePageModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'Main_profilePage'});
+        parameters: {'screen_name': 'main_profile_page'});
     animationsMap.addAll({
       'textOnPageLoadAnimation': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,

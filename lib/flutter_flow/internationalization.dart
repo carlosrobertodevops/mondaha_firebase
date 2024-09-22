@@ -958,7 +958,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // Main_messages
+  // main_messages
   {
     '8jlklje5': {
       'en': 'Messages',
@@ -1093,7 +1093,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // Main_profilePage
+  // main_profile_page
   {
     'qrxn5crt': {
       'en': 'My Profile',
@@ -2110,10 +2110,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Perfil',
       'pt': 'Perfil',
     },
-    'gwg6xxsg': {
+    'j1bmm3tm': {
       'en': 'Exit',
-      'es': 'Salida',
-      'pt': 'Saír',
+      'es': 'Salir',
+      'pt': 'Sair',
     },
   },
   // command_palette

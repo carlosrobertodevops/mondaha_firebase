@@ -115,13 +115,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const MainFaccoesWidget(),
             ),
             FFRoute(
-              name: 'Main_messages',
+              name: 'main_messages',
               path: 'mainMessages',
               requireAuth: true,
               builder: (context, params) => const MainMessagesWidget(),
             ),
             FFRoute(
-              name: 'Main_profilePage',
+              name: 'main_profile_page',
               path: 'mainProfilePage',
               requireAuth: true,
               builder: (context, params) => const MainProfilePageWidget(),

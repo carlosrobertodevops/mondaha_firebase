@@ -31,7 +31,7 @@ class _MainMessagesWidgetState extends State<MainMessagesWidget>
     _model = createModel(context, () => MainMessagesModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'Main_messages'});
+        parameters: {'screen_name': 'main_messages'});
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 

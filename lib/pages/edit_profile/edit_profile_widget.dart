@@ -321,7 +321,11 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(
-                            'You successfully updated your profile information!',
+                            FFLocalizations.of(context).getVariableText(
+                              enText: 'Information saved successfully!!!',
+                              ptText: 'Informações salvas com sucesso !!!',
+                              esText: 'Información guardada exitosamente!!!',
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(

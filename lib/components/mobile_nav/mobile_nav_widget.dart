@@ -130,7 +130,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                   logFirebaseEvent('MOBILE_NAV_COMP_Column_t87ij4ed_ON_TAP');
 
                   context.pushNamed(
-                    'Main_messages',
+                    'main_messages',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
@@ -271,7 +271,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                   logFirebaseEvent('MOBILE_NAV_COMP_Column_rda41op2_ON_TAP');
 
                   context.pushNamed(
-                    'Main_profilePage',
+                    'main_profile_page',
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
