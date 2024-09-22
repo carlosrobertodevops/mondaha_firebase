@@ -15,8 +15,7 @@ export '/pages/main_pages/main_messages/main_messages_widget.dart'
 export '/pages/main_pages/main_profile_page/main_profile_page_widget.dart'
     show MainProfilePageWidget;
 export '/pages/user_details/user_details_widget.dart' show UserDetailsWidget;
-export '/pages/auth_pages/edit_profile/edit_profile_widget.dart'
-    show EditProfileWidget;
+export '/pages/edit_profile/edit_profile_widget.dart' show EditProfileWidget;
 export '/pages/project_details_health_ai/project_details_health_ai_widget.dart'
     show ProjectDetailsHealthAiWidget;
 export '/pages/project_details/project_details_widget.dart'
