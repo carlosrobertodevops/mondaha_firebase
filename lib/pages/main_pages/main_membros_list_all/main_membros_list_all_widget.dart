@@ -1,7 +1,6 @@
 import '/backend/backend.dart';
 import '/components/dropdown_user_edit/dropdown_user_edit_widget.dart';
 import '/components/modals/command_palette/command_palette_widget.dart';
-import '/components/modals_extra/modal_share_project/modal_share_project_widget.dart';
 import '/components/web_nav/web_nav_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
@@ -529,72 +528,52 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                           phone: false,
                           tablet: false,
                         ))
-                          Builder(
-                            builder: (context) => FFButtonWidget(
-                              onPressed: () async {
-                                logFirebaseEvent(
-                                    'MAIN_MEMBROS_LIST_ALL_MEMBER_ADD_BTN_ON_');
-                                await showDialog(
-                                  barrierColor: Colors.transparent,
-                                  context: context,
-                                  builder: (dialogContext) {
-                                    return Dialog(
-                                      elevation: 0,
-                                      insetPadding: EdgeInsets.zero,
-                                      backgroundColor: Colors.transparent,
-                                      alignment: const AlignmentDirectional(0.0, 0.0)
-                                          .resolve(Directionality.of(context)),
-                                      child: GestureDetector(
-                                        onTap: () =>
-                                            FocusScope.of(dialogContext)
-                                                .unfocus(),
-                                        child: const ModalShareProjectWidget(),
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                              text: FFLocalizations.of(context).getText(
-                                'eux2gob0' /* Member Add */,
+                          FFButtonWidget(
+                            onPressed: () async {
+                              logFirebaseEvent(
+                                  'MAIN_MEMBROS_LIST_ALL_MEMBER_ADD_BTN_ON_');
+
+                              context.pushNamed('create_membros');
+                            },
+                            text: FFLocalizations.of(context).getText(
+                              'eux2gob0' /* Member Add */,
+                            ),
+                            icon: const Icon(
+                              Icons.add,
+                              size: 32.0,
+                            ),
+                            options: FFButtonOptions(
+                              height: 44.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  24.0, 0.0, 24.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .titleSmallFamily,
+                                    letterSpacing: 0.0,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey(
+                                            FlutterFlowTheme.of(context)
+                                                .titleSmallFamily),
+                                  ),
+                              elevation: 3.0,
+                              borderSide: const BorderSide(
+                                color: Colors.transparent,
+                                width: 1.0,
                               ),
-                              icon: const Icon(
-                                Icons.add,
-                                size: 32.0,
-                              ),
-                              options: FFButtonOptions(
-                                height: 44.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 0.0, 24.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
+                              borderRadius: BorderRadius.circular(12.0),
+                              hoverColor: FlutterFlowTheme.of(context).accent1,
+                              hoverBorderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .titleSmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .titleSmallFamily,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily),
-                                    ),
-                                elevation: 3.0,
-                                borderSide: const BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
-                                ),
-                                borderRadius: BorderRadius.circular(12.0),
-                                hoverColor:
-                                    FlutterFlowTheme.of(context).accent1,
-                                hoverBorderSide: BorderSide(
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  width: 1.0,
-                                ),
-                                hoverTextColor:
-                                    FlutterFlowTheme.of(context).primaryText,
-                                hoverElevation: 0.0,
+                                width: 1.0,
                               ),
+                              hoverTextColor:
+                                  FlutterFlowTheme.of(context).primaryText,
+                              hoverElevation: 0.0,
                             ),
                           ),
                         FlutterFlowIconButton(
@@ -844,7 +823,7 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'es8ud6ei' /* Common name */,
+                                                                'es8ud6ei' /* Function */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -923,11 +902,7 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                             ),
                                             content: StreamBuilder<
                                                 List<MembrosRecord>>(
-                                              stream: queryMembrosRecord(
-                                                queryBuilder: (membrosRecord) =>
-                                                    membrosRecord.orderBy(
-                                                        'nome_completo'),
-                                              ),
+                                              stream: queryMembrosRecord(),
                                               builder: (context, snapshot) {
                                                 // Customize what your widget looks like when it's loading.
                                                 if (!snapshot.hasData) {
@@ -1123,8 +1098,8 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                                             child:
                                                                                 Text(
                                                                               valueOrDefault<String>(
-                                                                                listViewMembrosRecord.vulgo.first,
-                                                                                'Vulgo',
+                                                                                listViewMembrosRecord.funcaoId?.id,
+                                                                                'Funcao',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1157,7 +1132,10 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                                                 child: Padding(
                                                                                   padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                                                                                   child: Text(
-                                                                                    listViewMembrosRecord.faccao,
+                                                                                    valueOrDefault<String>(
+                                                                                      listViewMembrosRecord.faccaoId?.id,
+                                                                                      'Faccao',
+                                                                                    ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                           letterSpacing: 0.0,
@@ -1478,7 +1456,7 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                   queryBuilder:
                                                       (membrosRecord) =>
                                                           membrosRecord.orderBy(
-                                                              'faccao'),
+                                                              'nome_completo'),
                                                 ),
                                                 builder: (context, snapshot) {
                                                   // Customize what your widget looks like when it's loading.
@@ -1703,7 +1681,11 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                                                   child: Padding(
                                                                                     padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                                                                                     child: Text(
-                                                                                      listViewMembrosRecord.faccao,
+                                                                                      dateTimeFormat(
+                                                                                        "relative",
+                                                                                        listViewMembrosRecord.dtAlteracao!,
+                                                                                        locale: FFLocalizations.of(context).languageCode,
+                                                                                      ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                             letterSpacing: 0.0,
@@ -2359,7 +2341,11 @@ class _MainMembrosListAllWidgetState extends State<MainMembrosListAllWidget>
                                                                                   child: Padding(
                                                                                     padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                                                                                     child: Text(
-                                                                                      listViewMembrosRecord.faccao,
+                                                                                      dateTimeFormat(
+                                                                                        "relative",
+                                                                                        listViewMembrosRecord.dtAlteracao!,
+                                                                                        locale: FFLocalizations.of(context).languageCode,
+                                                                                      ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                             letterSpacing: 0.0,

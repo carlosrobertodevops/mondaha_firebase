@@ -10,9 +10,10 @@ import 'schema/agencia_record.dart';
 import 'schema/faccoes_record.dart';
 import 'schema/validacoes_record.dart';
 import 'schema/membros_record.dart';
-import 'schema/tipo_users_record.dart';
 import 'schema/logs_record.dart';
 import 'schema/funcoes_record.dart';
+import 'schema/nivel_acesso_record.dart';
+import 'schema/tipo_usuario_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -26,9 +27,10 @@ export 'schema/agencia_record.dart';
 export 'schema/faccoes_record.dart';
 export 'schema/validacoes_record.dart';
 export 'schema/membros_record.dart';
-export 'schema/tipo_users_record.dart';
 export 'schema/logs_record.dart';
 export 'schema/funcoes_record.dart';
+export 'schema/nivel_acesso_record.dart';
+export 'schema/tipo_usuario_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -215,43 +217,6 @@ Future<List<MembrosRecord>> queryMembrosRecordOnce({
       singleRecord: singleRecord,
     );
 
-/// Functions to query TipoUsersRecords (as a Stream and as a Future).
-Future<int> queryTipoUsersRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      TipoUsersRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<TipoUsersRecord>> queryTipoUsersRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      TipoUsersRecord.collection,
-      TipoUsersRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<TipoUsersRecord>> queryTipoUsersRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      TipoUsersRecord.collection,
-      TipoUsersRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
 /// Functions to query LogsRecords (as a Stream and as a Future).
 Future<int> queryLogsRecordCount({
   Query Function(Query)? queryBuilder,
@@ -321,6 +286,80 @@ Future<List<FuncoesRecord>> queryFuncoesRecordOnce({
     queryCollectionOnce(
       FuncoesRecord.collection,
       FuncoesRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query NivelAcessoRecords (as a Stream and as a Future).
+Future<int> queryNivelAcessoRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      NivelAcessoRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<NivelAcessoRecord>> queryNivelAcessoRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      NivelAcessoRecord.collection,
+      NivelAcessoRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<NivelAcessoRecord>> queryNivelAcessoRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      NivelAcessoRecord.collection,
+      NivelAcessoRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query TipoUsuarioRecords (as a Stream and as a Future).
+Future<int> queryTipoUsuarioRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      TipoUsuarioRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<TipoUsuarioRecord>> queryTipoUsuarioRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      TipoUsuarioRecord.collection,
+      TipoUsuarioRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<TipoUsuarioRecord>> queryTipoUsuarioRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      TipoUsuarioRecord.collection,
+      TipoUsuarioRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

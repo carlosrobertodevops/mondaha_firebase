@@ -60,6 +60,46 @@ class UsersRecord extends FirestoreRecord {
   DateTime? get createdAt => _createdAt;
   bool hasCreatedAt() => _createdAt != null;
 
+  // "agencia_id" field.
+  DocumentReference? _agenciaId;
+  DocumentReference? get agenciaId => _agenciaId;
+  bool hasAgenciaId() => _agenciaId != null;
+
+  // "tipo_usuario_id" field.
+  DocumentReference? _tipoUsuarioId;
+  DocumentReference? get tipoUsuarioId => _tipoUsuarioId;
+  bool hasTipoUsuarioId() => _tipoUsuarioId != null;
+
+  // "nivel_acesso_id" field.
+  DocumentReference? _nivelAcessoId;
+  DocumentReference? get nivelAcessoId => _nivelAcessoId;
+  bool hasNivelAcessoId() => _nivelAcessoId != null;
+
+  // "nome_completo" field.
+  String? _nomeCompleto;
+  String get nomeCompleto => _nomeCompleto ?? '';
+  bool hasNomeCompleto() => _nomeCompleto != null;
+
+  // "faccao_equipe" field.
+  String? _faccaoEquipe;
+  String get faccaoEquipe => _faccaoEquipe ?? '';
+  bool hasFaccaoEquipe() => _faccaoEquipe != null;
+
+  // "is_bloqueado" field.
+  bool? _isBloqueado;
+  bool get isBloqueado => _isBloqueado ?? false;
+  bool hasIsBloqueado() => _isBloqueado != null;
+
+  // "is_acesso" field.
+  bool? _isAcesso;
+  bool get isAcesso => _isAcesso ?? false;
+  bool hasIsAcesso() => _isAcesso != null;
+
+  // "user_liberou_acesso" field.
+  DocumentReference? _userLiberouAcesso;
+  DocumentReference? get userLiberouAcesso => _userLiberouAcesso;
+  bool hasUserLiberouAcesso() => _userLiberouAcesso != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -70,6 +110,15 @@ class UsersRecord extends FirestoreRecord {
     _lastActive = snapshotData['lastActive'] as DateTime?;
     _bio = snapshotData['bio'] as String?;
     _createdAt = snapshotData['createdAt'] as DateTime?;
+    _agenciaId = snapshotData['agencia_id'] as DocumentReference?;
+    _tipoUsuarioId = snapshotData['tipo_usuario_id'] as DocumentReference?;
+    _nivelAcessoId = snapshotData['nivel_acesso_id'] as DocumentReference?;
+    _nomeCompleto = snapshotData['nome_completo'] as String?;
+    _faccaoEquipe = snapshotData['faccao_equipe'] as String?;
+    _isBloqueado = snapshotData['is_bloqueado'] as bool?;
+    _isAcesso = snapshotData['is_acesso'] as bool?;
+    _userLiberouAcesso =
+        snapshotData['user_liberou_acesso'] as DocumentReference?;
   }
 
   static CollectionReference get collection =>
@@ -116,6 +165,14 @@ Map<String, dynamic> createUsersRecordData({
   DateTime? lastActive,
   String? bio,
   DateTime? createdAt,
+  DocumentReference? agenciaId,
+  DocumentReference? tipoUsuarioId,
+  DocumentReference? nivelAcessoId,
+  String? nomeCompleto,
+  String? faccaoEquipe,
+  bool? isBloqueado,
+  bool? isAcesso,
+  DocumentReference? userLiberouAcesso,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -128,6 +185,14 @@ Map<String, dynamic> createUsersRecordData({
       'lastActive': lastActive,
       'bio': bio,
       'createdAt': createdAt,
+      'agencia_id': agenciaId,
+      'tipo_usuario_id': tipoUsuarioId,
+      'nivel_acesso_id': nivelAcessoId,
+      'nome_completo': nomeCompleto,
+      'faccao_equipe': faccaoEquipe,
+      'is_bloqueado': isBloqueado,
+      'is_acesso': isAcesso,
+      'user_liberou_acesso': userLiberouAcesso,
     }.withoutNulls,
   );
 
@@ -147,7 +212,15 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.lastActive == e2?.lastActive &&
         e1?.bio == e2?.bio &&
-        e1?.createdAt == e2?.createdAt;
+        e1?.createdAt == e2?.createdAt &&
+        e1?.agenciaId == e2?.agenciaId &&
+        e1?.tipoUsuarioId == e2?.tipoUsuarioId &&
+        e1?.nivelAcessoId == e2?.nivelAcessoId &&
+        e1?.nomeCompleto == e2?.nomeCompleto &&
+        e1?.faccaoEquipe == e2?.faccaoEquipe &&
+        e1?.isBloqueado == e2?.isBloqueado &&
+        e1?.isAcesso == e2?.isAcesso &&
+        e1?.userLiberouAcesso == e2?.userLiberouAcesso;
   }
 
   @override
@@ -160,7 +233,15 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.phoneNumber,
         e?.lastActive,
         e?.bio,
-        e?.createdAt
+        e?.createdAt,
+        e?.agenciaId,
+        e?.tipoUsuarioId,
+        e?.nivelAcessoId,
+        e?.nomeCompleto,
+        e?.faccaoEquipe,
+        e?.isBloqueado,
+        e?.isAcesso,
+        e?.userLiberouAcesso
       ]);
 
   @override

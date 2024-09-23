@@ -220,6 +220,8 @@ class _EditProfilePhotoWidgetState extends State<EditProfilePhotoWidget> {
                                               'EDIT_PROFILE_PHOTO_UPLOAD_IMAGE_BTN_ON_T');
                                           final selectedMedia =
                                               await selectMedia(
+                                            maxWidth: 100.00,
+                                            maxHeight: 100.00,
                                             mediaSource:
                                                 MediaSource.photoGallery,
                                             multiImage: false,

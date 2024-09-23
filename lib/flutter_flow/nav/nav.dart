@@ -103,12 +103,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const MainHomeWidget(),
             ),
             FFRoute(
-              name: 'main_membros_list',
-              path: 'mainMembrosList',
-              requireAuth: true,
-              builder: (context, params) => const MainMembrosListWidget(),
-            ),
-            FFRoute(
               name: 'main_faccoes',
               path: 'mainFaccoes',
               requireAuth: true,
@@ -168,16 +162,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const MessagesDetailsWidget(),
             ),
             FFRoute(
-              name: 'search_membros',
-              path: 'searchMembros',
-              requireAuth: true,
-              builder: (context, params) => const SearchMembrosWidget(),
-            ),
-            FFRoute(
               name: 'main_membros_list_all',
               path: 'mainMembrosListAll',
               requireAuth: true,
               builder: (context, params) => const MainMembrosListAllWidget(),
+            ),
+            FFRoute(
+              name: 'create_membros',
+              path: 'createMembros',
+              requireAuth: true,
+              builder: (context, params) => const CreateMembrosWidget(),
+            ),
+            FFRoute(
+              name: 'user_detailsCopy',
+              path: 'userDetailsCopy',
+              requireAuth: true,
+              builder: (context, params) => UserDetailsCopyWidget(
+                showBack: params.getParam(
+                  'showBack',
+                  ParamType.bool,
+                ),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

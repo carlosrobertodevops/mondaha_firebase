@@ -402,469 +402,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '__',
     },
   },
-  // main_membros_list
-  {
-    'n99lg1qh': {
-      'en': 'Members',
-      'es': 'Miembros',
-      'pt': 'Membros',
-    },
-    'c0fud373': {
-      'en': 'Member Add',
-      'es': 'Miembro Agregar',
-      'pt': 'Adicionar membro',
-    },
-    'lvnskphp': {
-      'en': 'All',
-      'es': 'Todo',
-      'pt': 'Todos',
-    },
-    'lv63ry33': {
-      'en': 'Name',
-      'es': 'Nombre',
-      'pt': 'Nome',
-    },
-    '3jc30nhb': {
-      'en': 'Title',
-      'es': 'Título',
-      'pt': 'Título',
-    },
-    'psnj7fx2': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'x4t5ubax': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'f7qtspgr': {
-      'en': 'Status',
-      'es': 'Estado',
-      'pt': 'Status',
-    },
-    '23azy85r': {
-      'en': 'Randy Alcorn',
-      'es': 'Randy Alcorn',
-      'pt': 'Randy Alcorn',
-    },
-    't94xshgo': {
-      'en': 'Head of Procurement',
-      'es': 'Jefe de Adquisiciones',
-      'pt': 'Chefe de Compras',
-    },
-    'c64pircc': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    'lramvrtt': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    'o2wxqv8s': {
-      'en': 'New',
-      'es': 'Nuevo',
-      'pt': 'Novo',
-    },
-    'nov4omf0': {
-      'en': 'James Wiseman',
-      'es': 'James Wiseman',
-      'pt': 'James Sábio',
-    },
-    'ecmyhsm6': {
-      'en': 'Account Manager',
-      'es': 'Gerente de cuentas',
-      'pt': 'Gerente de contas',
-    },
-    'oilror30': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    '4vulti3m': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    'ol506mis': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'nrrpn9bk': {
-      'en': 'Ignacious Rodriguez',
-      'es': 'Ignacio Rodríguez',
-      'pt': 'Ignacious Rodriguez',
-    },
-    '68ikk958': {
-      'en': 'Sales Manager',
-      'es': 'Gerente de ventas',
-      'pt': 'Gerente de vendas',
-    },
-    'qvj1skff': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'crzsjhxz': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    '4fi3ph8d': {
-      'en': 'New',
-      'es': 'Nuevo',
-      'pt': 'Novo',
-    },
-    'fyshzov1': {
-      'en': 'Elena Williams',
-      'es': 'Elena Williams',
-      'pt': 'Elena Williams',
-    },
-    'zizg0wjs': {
-      'en': 'Head of Product & Innovation',
-      'es': 'Jefe de Producto e Innovación',
-      'pt': 'Chefe de Produto e Inovação',
-    },
-    'u8nzehor': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'hqdqznjh': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'r7kgommj': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'kr1xabue': {
-      'en': 'Greg Brown',
-      'es': 'Greg Brown',
-      'pt': 'Greg Brown',
-    },
-    'js99qoad': {
-      'en': 'Account Manager',
-      'es': 'Gerente de cuentas',
-      'pt': 'Gerente de contas',
-    },
-    'lnaj1mib': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'utinum4i': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    's2ar4upb': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'sxjqly4q': {
-      'en': 'June Williamson',
-      'es': 'Junio Williamson',
-      'pt': 'Junho Williamson',
-    },
-    '9yghi473': {
-      'en': 'Sr. Account Manager',
-      'es': 'Gerente de Cuentas Senior',
-      'pt': 'Gerente de contas sênior',
-    },
-    '8rhg1yxs': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'o4mqcps7': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'h08pfzbd': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    '48tof6pe': {
-      'en': 'June Williamson',
-      'es': 'Junio Williamson',
-      'pt': 'Junho Williamson',
-    },
-    'dqst186e': {
-      'en': 'Sr. Account Manager',
-      'es': 'Gerente de Cuentas Senior',
-      'pt': 'Gerente de contas sênior',
-    },
-    'ye57nc25': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'dwbz001x': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'h11tzg9r': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'qh2ock0d': {
-      'en': 'New Calls',
-      'es': 'Nuevas llamadas',
-      'pt': 'Novas Chamadas',
-    },
-    'g7av4tqg': {
-      'en': 'Name',
-      'es': 'Nombre',
-      'pt': 'Nome',
-    },
-    'xffgkt7t': {
-      'en': 'Title',
-      'es': 'Título',
-      'pt': 'Título',
-    },
-    'vxppadlg': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'p4xvpvgf': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'm8o2psfk': {
-      'en': 'Status',
-      'es': 'Estado',
-      'pt': 'Status',
-    },
-    '4sgc04rh': {
-      'en': 'Randy Alcorn',
-      'es': 'Randy Alcorn',
-      'pt': 'Randy Alcorn',
-    },
-    'np65t22e': {
-      'en': 'Head of Procurement',
-      'es': 'Jefe de Adquisiciones',
-      'pt': 'Chefe de Compras',
-    },
-    'qpkca13g': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    '3tctrgig': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    'fyrppt8y': {
-      'en': 'New',
-      'es': 'Nuevo',
-      'pt': 'Novo',
-    },
-    '2bby4175': {
-      'en': 'Ignacious Rodriguez',
-      'es': 'Ignacio Rodríguez',
-      'pt': 'Ignacious Rodriguez',
-    },
-    '4wembrbp': {
-      'en': 'Sales Manager',
-      'es': 'Gerente de ventas',
-      'pt': 'Gerente de vendas',
-    },
-    'p2txrfk0': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    '9re9difn': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'ym5de2ey': {
-      'en': 'New',
-      'es': 'Nuevo',
-      'pt': 'Novo',
-    },
-    's7xebw09': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'dhrxhg83': {
-      'en': 'Name',
-      'es': 'Nombre',
-      'pt': 'Nome',
-    },
-    '4494sdp5': {
-      'en': 'Title',
-      'es': 'Título',
-      'pt': 'Título',
-    },
-    't6erxmdi': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'a2sv9lv3': {
-      'en': 'Company',
-      'es': 'Compañía',
-      'pt': 'Empresa',
-    },
-    'vc59gy2z': {
-      'en': 'Status',
-      'es': 'Estado',
-      'pt': 'Status',
-    },
-    'v5iv0hjb': {
-      'en': 'James Wiseman',
-      'es': 'James Wiseman',
-      'pt': 'James Sábio',
-    },
-    '7o5zylri': {
-      'en': 'Account Manager',
-      'es': 'Gerente de cuentas',
-      'pt': 'Gerente de contas',
-    },
-    'rvw10tmv': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    's4uvjsw7': {
-      'en': 'ACME Co.',
-      'es': 'Compañía ACME',
-      'pt': 'Empresa ACME',
-    },
-    'w83ub0yw': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    '4yjpkz0n': {
-      'en': 'Elena Williams',
-      'es': 'Elena Williams',
-      'pt': 'Elena Williams',
-    },
-    'l4xjfp78': {
-      'en': 'Head of Product & Innovation',
-      'es': 'Jefe de Producto e Innovación',
-      'pt': 'Chefe de Produto e Inovação',
-    },
-    'anfz0t9o': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'cz0219wa': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'uf38k81m': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'evh01zxl': {
-      'en': 'Greg Brown',
-      'es': 'Greg Brown',
-      'pt': 'Greg Brown',
-    },
-    '6h3e5pnw': {
-      'en': 'Account Manager',
-      'es': 'Gerente de cuentas',
-      'pt': 'Gerente de contas',
-    },
-    '1n18qv7i': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'yca9mthr': {
-      'en': 'Robin HQ',
-      'es': 'Cuartel general de Robin',
-      'pt': 'Quartel General de Robin',
-    },
-    'o17d2quf': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'd0z8df2i': {
-      'en': 'June Williamson',
-      'es': 'Junio Williamson',
-      'pt': 'Junho Williamson',
-    },
-    '14oiknrw': {
-      'en': 'Sr. Account Manager',
-      'es': 'Gerente de Cuentas Senior',
-      'pt': 'Gerente de contas sênior',
-    },
-    'y3upyxdi': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'ymf5axsy': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    '60qa1l5k': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'mootyc3i': {
-      'en': 'June Williamson',
-      'es': 'Junio Williamson',
-      'pt': 'Junho Williamson',
-    },
-    'gun8gz5b': {
-      'en': 'Sr. Account Manager',
-      'es': 'Gerente de Cuentas Senior',
-      'pt': 'Gerente de contas sênior',
-    },
-    'sbiuhbrx': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    'q28hkdoo': {
-      'en': 'HealthAi',
-      'es': 'SaludAi',
-      'pt': 'SaúdeAi',
-    },
-    '4qxa4kwr': {
-      'en': 'Contacted',
-      'es': 'Contactado',
-      'pt': 'Contatado',
-    },
-    'fcyoodds': {
-      'en': 'Customers',
-      'es': 'Clientes',
-      'pt': 'Clientes',
-    },
-    '3ourv2w9': {
-      'en': '__',
-      'es': '__',
-      'pt': '__',
-    },
-  },
   // main_faccoes
   {
     '4h88trkp': {
@@ -1376,39 +913,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Lar',
     },
   },
-  // search_membros
-  {
-    '2b3djebw': {
-      'en': 'Add Members',
-      'es': 'Agregar miembros',
-      'pt': 'Adicionar membros',
-    },
-    'oj5lwmts': {
-      'en': 'Search members...',
-      'es': 'Buscar miembros...',
-      'pt': 'Pesquisar membros...',
-    },
-    'm464l0qg': {
-      'en': 'Option 1',
-      'es': 'Opción 1',
-      'pt': 'Opção 1',
-    },
-    '8jh083k1': {
-      'en': 'All Members',
-      'es': 'Todos los miembros',
-      'pt': 'Todos os membros',
-    },
-    'h6oexmxg': {
-      'en': 'View',
-      'es': 'Vista',
-      'pt': 'Visualizar',
-    },
-    'dgc9tf8z': {
-      'en': 'Home',
-      'es': 'Hogar',
-      'pt': 'Lar',
-    },
-  },
   // main_membros_list_all
   {
     'c21nlyqi': {
@@ -1437,9 +941,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Vulgo',
     },
     'es8ud6ei': {
-      'en': 'Common name',
-      'es': 'Nombre común',
-      'pt': 'Vulgo',
+      'en': 'Function',
+      'es': 'Función',
+      'pt': 'Função',
     },
     '7siq4kx2': {
       'en': 'Status',
@@ -1923,6 +1427,125 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'rhgiw7n8': {
       'en': '__',
+      'es': '',
+      'pt': '',
+    },
+  },
+  // create_membros
+  {
+    'pdzoq4yt': {
+      'en': 'Edit Profile',
+      'es': 'Editar perfil',
+      'pt': 'Editar Perfil',
+    },
+    'blzbu1lb': {
+      'en': 'Tab 1',
+      'es': 'Pestaña 1',
+      'pt': 'Aba 1',
+    },
+    'cmmw7oq1': {
+      'en': 'Create Company Profile',
+      'es': 'Crear perfil de empresa',
+      'pt': 'Criar Perfil da Empresa',
+    },
+    'wajv0aoe': {
+      'en':
+          'Upload images about your company and fill out the information below.',
+      'es':
+          'Sube imágenes sobre tu empresa y completa la información a continuación.',
+      'pt':
+          'Carregue imagens sobre sua empresa e preencha as informações abaixo.',
+    },
+    'ddwbvns2': {
+      'en': 'Option 1',
+      'es': '',
+      'pt': '',
+    },
+    '9hs51lix': {
+      'en': 'Option 2',
+      'es': '',
+      'pt': '',
+    },
+    'ntfz21nk': {
+      'en': 'Option 3',
+      'es': '',
+      'pt': '',
+    },
+    'ezb6otvv': {
+      'en': 'Select one Faction ...',
+      'es': 'Seleccione una facción...',
+      'pt': 'Selecione uma facção...',
+    },
+    'oe7yokrp': {
+      'en': 'Search...',
+      'es': 'Buscar...',
+      'pt': 'Procurar...',
+    },
+    'blc4txs6': {
+      'en': 'Company Name',
+      'es': 'nombre de empresa',
+      'pt': 'nome da empresa',
+    },
+    '3po8kih9': {
+      'en': 'Company City',
+      'es': 'Ciudad de la empresa',
+      'pt': 'Cidade da empresa',
+    },
+    'y6feavdk': {
+      'en': 'Company City',
+      'es': 'Ciudad de la empresa',
+      'pt': 'Cidade da empresa',
+    },
+    '1iu3c6qw': {
+      'en': 'Company City',
+      'es': 'Ciudad de la empresa',
+      'pt': 'Cidade da empresa',
+    },
+    'obkktjsl': {
+      'en': 'Company City',
+      'es': '',
+      'pt': '',
+    },
+    'lk8jjy5r': {
+      'en': 'Website',
+      'es': '',
+      'pt': '',
+    },
+    'lkp261n5': {
+      'en': 'Enter in your website without \"https://\"...',
+      'es': '',
+      'pt': '',
+    },
+    'aliym2zw': {
+      'en': '',
+      'es': '',
+      'pt': '',
+    },
+    'ohqxjk0r': {
+      'en': 'Cancel',
+      'es': 'Cancelar',
+      'pt': 'Cancelar',
+    },
+    'ngdh62l1': {
+      'en': 'Create Company',
+      'es': 'Crear empresa',
+      'pt': 'Criar empresa',
+    },
+    'fu58qaod': {
+      'en': 'Tab 2',
+      'es': 'Pestaña 2',
+      'pt': 'Aba 2',
+    },
+    'sny5oraa': {
+      'en': 'Tab 3',
+      'es': 'Pestaña 3',
+      'pt': 'Aba 3',
+    },
+  },
+  // user_detailsCopy
+  {
+    't4i12okd': {
+      'en': 'Home',
       'es': '',
       'pt': '',
     },
@@ -2570,52 +2193,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Detalhes do Projeto',
     },
   },
-  // modal_create_company
-  {
-    'v7w6sfgf': {
-      'en': 'Create Company Profile',
-      'es': 'Crear perfil de empresa',
-      'pt': 'Criar Perfil da Empresa',
-    },
-    'bb7jk21d': {
-      'en':
-          'Upload images about your company and fill out the information below.',
-      'es':
-          'Sube imágenes sobre tu empresa y completa la información a continuación.',
-      'pt':
-          'Carregue imagens sobre sua empresa e preencha as informações abaixo.',
-    },
-    '2zz9r0nk': {
-      'en': 'Company Name',
-      'es': 'nombre de empresa',
-      'pt': 'nome da empresa',
-    },
-    'hsxlh4zc': {
-      'en': 'Company City',
-      'es': 'Ciudad de la empresa',
-      'pt': 'Cidade da empresa',
-    },
-    'f1aegt92': {
-      'en': 'Website',
-      'es': 'Sitio web',
-      'pt': 'Site',
-    },
-    'nrfx3n3y': {
-      'en': 'Enter in your website without \"https://\"...',
-      'es': 'Ingresa en tu sitio web sin \"https://\"...',
-      'pt': 'Entre no seu site sem \"https://\"...',
-    },
-    'p9crjkw6': {
-      'en': 'Cancel',
-      'es': 'Cancelar',
-      'pt': 'Cancelar',
-    },
-    'fgcl19a6': {
-      'en': 'Create Company',
-      'es': 'Crear empresa',
-      'pt': 'Criar empresa',
-    },
-  },
   // modal_invite_user
   {
     '2c6w1mkp': {
@@ -2915,30 +2492,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'El correo electrónico asociado a esta cuenta es:',
       'pt': 'O e-mail associado a esta conta é:',
     },
-    'i6iuebkd': {
-      'en': 'casper@ghostbusters.com',
-      'es': 'casper@cazafantasmas.com',
-      'pt': 'casper@ghostbusters.com',
-    },
     'fyuvtufe': {
       'en': 'Created On:',
       'es': 'Creado el:',
       'pt': 'Criado em:',
     },
-    'jk8us6c6': {
-      'en': 'July 12th, 2023',
-      'es': '12 de julio de 2023',
-      'pt': '12 de julho de 2023',
-    },
     'h4jwedag': {
       'en': 'Last Active:',
       'es': 'Última actividad:',
       'pt': 'Última atividade:',
-    },
-    'iakkv8eq': {
-      'en': 'Just Now',
-      'es': 'En este momento',
-      'pt': 'Agora mesmo',
     },
     '27w5o6gn': {
       'en': 'Cancel',
@@ -2949,6 +2511,157 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Save Changes',
       'es': 'Guardar cambios',
       'pt': 'Salvar alterações',
+    },
+  },
+  // modal_membro_edit
+  {
+    'lzo8ohth': {
+      'en': 'Edit Profile',
+      'es': '',
+      'pt': '',
+    },
+    'h4j1isw2': {
+      'en': 'Below are your profile details',
+      'es': '',
+      'pt': '',
+    },
+    'wmdiznix': {
+      'en': 'Change Photo',
+      'es': 'Cambiar foto',
+      'pt': 'Alterar foto',
+    },
+    '7vrj0xbc': {
+      'en': 'Your Name',
+      'es': '',
+      'pt': '',
+    },
+    'frlq3e4c': {
+      'en': 'Short Description',
+      'es': '',
+      'pt': '',
+    },
+    '2rc5htso': {
+      'en': 'Admin',
+      'es': '',
+      'pt': '',
+    },
+    'ccx2fc7e': {
+      'en': 'Admin',
+      'es': '',
+      'pt': '',
+    },
+    '8szdbinx': {
+      'en': 'Manager',
+      'es': '',
+      'pt': '',
+    },
+    'gnknf1rx': {
+      'en': 'Editor',
+      'es': '',
+      'pt': '',
+    },
+    'ep5cskno': {
+      'en': 'Viewer',
+      'es': '',
+      'pt': '',
+    },
+    '0h96rpr5': {
+      'en': 'Please select...',
+      'es': '',
+      'pt': '',
+    },
+    '2rvqw833': {
+      'en': 'Search for an item...',
+      'es': '',
+      'pt': '',
+    },
+    '4vfeafxc': {
+      'en': 'The email associated with this account is:',
+      'es': '',
+      'pt': '',
+    },
+    'javg82xt': {
+      'en': 'Created On:',
+      'es': '',
+      'pt': '',
+    },
+    'vqytc8j7': {
+      'en': 'Last Active:',
+      'es': '',
+      'pt': '',
+    },
+    'z7iguyi2': {
+      'en': 'Cancel',
+      'es': '',
+      'pt': '',
+    },
+    'rear3tma': {
+      'en': 'Save Changes',
+      'es': '',
+      'pt': '',
+    },
+  },
+  // modal_create_faccao
+  {
+    '5i7vrdwq': {
+      'en': 'Add Factions',
+      'es': 'Añadir facciones',
+      'pt': 'Adicionar Facções',
+    },
+    'ndzubj6c': {
+      'en': 'Please enter the information below to add a project.',
+      'es': '',
+      'pt': '',
+    },
+    't6k190ot': {
+      'en': 'Add Photo',
+      'es': 'Añadir foto',
+      'pt': 'Adicionar foto',
+    },
+    'eggnalls': {
+      'en': 'Name',
+      'es': 'Nombre',
+      'pt': 'Nome',
+    },
+    'jj979xf0': {
+      'en': 'Project Name',
+      'es': '',
+      'pt': '',
+    },
+    'cjt13jln': {
+      'en': 'Description',
+      'es': 'Descripción',
+      'pt': 'Descrição',
+    },
+    'kysprs44': {
+      'en': 'Description here...',
+      'es': '',
+      'pt': '',
+    },
+    'popyb3h7': {
+      'en': 'Create Project',
+      'es': 'Crear proyecto',
+      'pt': 'Criar Projeto',
+    },
+    'gxl81j2c': {
+      'en': 'Please enter a project name...',
+      'es': '',
+      'pt': '',
+    },
+    'dqwsi4ob': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'pt': '',
+    },
+    '94ydbmto': {
+      'en': 'Please enter a short description...',
+      'es': '',
+      'pt': '',
+    },
+    'm5sqni2q': {
+      'en': 'Please choose an option from the dropdown',
+      'es': '',
+      'pt': '',
     },
   },
   // Miscellaneous

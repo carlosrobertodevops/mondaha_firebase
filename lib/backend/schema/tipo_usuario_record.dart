@@ -7,8 +7,8 @@ import '/backend/schema/util/firestore_util.dart';
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
-class TipoUsersRecord extends FirestoreRecord {
-  TipoUsersRecord._(
+class TipoUsuarioRecord extends FirestoreRecord {
+  TipoUsuarioRecord._(
     super.reference,
     super.data,
   ) {
@@ -26,40 +26,40 @@ class TipoUsersRecord extends FirestoreRecord {
 
   static CollectionReference get collection =>
       FirebaseFirestore.instanceFor(app: Firebase.app(), databaseId: 'mondaha')
-          .collection('tipoUsers');
+          .collection('tipo_usuario');
 
-  static Stream<TipoUsersRecord> getDocument(DocumentReference ref) =>
-      ref.snapshots().map((s) => TipoUsersRecord.fromSnapshot(s));
+  static Stream<TipoUsuarioRecord> getDocument(DocumentReference ref) =>
+      ref.snapshots().map((s) => TipoUsuarioRecord.fromSnapshot(s));
 
-  static Future<TipoUsersRecord> getDocumentOnce(DocumentReference ref) =>
-      ref.get().then((s) => TipoUsersRecord.fromSnapshot(s));
+  static Future<TipoUsuarioRecord> getDocumentOnce(DocumentReference ref) =>
+      ref.get().then((s) => TipoUsuarioRecord.fromSnapshot(s));
 
-  static TipoUsersRecord fromSnapshot(DocumentSnapshot snapshot) =>
-      TipoUsersRecord._(
+  static TipoUsuarioRecord fromSnapshot(DocumentSnapshot snapshot) =>
+      TipoUsuarioRecord._(
         snapshot.reference,
         mapFromFirestore(snapshot.data() as Map<String, dynamic>),
       );
 
-  static TipoUsersRecord getDocumentFromData(
+  static TipoUsuarioRecord getDocumentFromData(
     Map<String, dynamic> data,
     DocumentReference reference,
   ) =>
-      TipoUsersRecord._(reference, mapFromFirestore(data));
+      TipoUsuarioRecord._(reference, mapFromFirestore(data));
 
   @override
   String toString() =>
-      'TipoUsersRecord(reference: ${reference.path}, data: $snapshotData)';
+      'TipoUsuarioRecord(reference: ${reference.path}, data: $snapshotData)';
 
   @override
   int get hashCode => reference.path.hashCode;
 
   @override
   bool operator ==(other) =>
-      other is TipoUsersRecord &&
+      other is TipoUsuarioRecord &&
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createTipoUsersRecordData({
+Map<String, dynamic> createTipoUsuarioRecordData({
   String? descricao,
 }) {
   final firestoreData = mapToFirestore(
@@ -71,17 +71,17 @@ Map<String, dynamic> createTipoUsersRecordData({
   return firestoreData;
 }
 
-class TipoUsersRecordDocumentEquality implements Equality<TipoUsersRecord> {
-  const TipoUsersRecordDocumentEquality();
+class TipoUsuarioRecordDocumentEquality implements Equality<TipoUsuarioRecord> {
+  const TipoUsuarioRecordDocumentEquality();
 
   @override
-  bool equals(TipoUsersRecord? e1, TipoUsersRecord? e2) {
+  bool equals(TipoUsuarioRecord? e1, TipoUsuarioRecord? e2) {
     return e1?.descricao == e2?.descricao;
   }
 
   @override
-  int hash(TipoUsersRecord? e) => const ListEquality().hash([e?.descricao]);
+  int hash(TipoUsuarioRecord? e) => const ListEquality().hash([e?.descricao]);
 
   @override
-  bool isValidKey(Object? o) => o is TipoUsersRecord;
+  bool isValidKey(Object? o) => o is TipoUsuarioRecord;
 }

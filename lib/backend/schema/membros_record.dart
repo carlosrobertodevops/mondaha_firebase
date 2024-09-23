@@ -31,28 +31,52 @@ class MembrosRecord extends FirestoreRecord {
   String get photoPath => _photoPath ?? '';
   bool hasPhotoPath() => _photoPath != null;
 
-  // "faccao" field.
-  String? _faccao;
-  String get faccao => _faccao ?? '';
-  bool hasFaccao() => _faccao != null;
+  // "funcao_id" field.
+  DocumentReference? _funcaoId;
+  DocumentReference? get funcaoId => _funcaoId;
+  bool hasFuncaoId() => _funcaoId != null;
 
   // "user_id" field.
-  String? _userId;
-  String get userId => _userId ?? '';
+  DocumentReference? _userId;
+  DocumentReference? get userId => _userId;
   bool hasUserId() => _userId != null;
 
-  // "funcao" field.
-  List<String>? _funcao;
-  List<String> get funcao => _funcao ?? const [];
-  bool hasFuncao() => _funcao != null;
+  // "faccao_id" field.
+  DocumentReference? _faccaoId;
+  DocumentReference? get faccaoId => _faccaoId;
+  bool hasFaccaoId() => _faccaoId != null;
+
+  // "validacao_id" field.
+  DocumentReference? _validacaoId;
+  DocumentReference? get validacaoId => _validacaoId;
+  bool hasValidacaoId() => _validacaoId != null;
+
+  // "dt_cadastro" field.
+  DateTime? _dtCadastro;
+  DateTime? get dtCadastro => _dtCadastro;
+  bool hasDtCadastro() => _dtCadastro != null;
+
+  // "dt_alteracao" field.
+  DateTime? _dtAlteracao;
+  DateTime? get dtAlteracao => _dtAlteracao;
+  bool hasDtAlteracao() => _dtAlteracao != null;
+
+  // "user_alteracao_id" field.
+  DocumentReference? _userAlteracaoId;
+  DocumentReference? get userAlteracaoId => _userAlteracaoId;
+  bool hasUserAlteracaoId() => _userAlteracaoId != null;
 
   void _initializeFields() {
     _nomeCompleto = snapshotData['nome_completo'] as String?;
     _vulgo = getDataList(snapshotData['vulgo']);
     _photoPath = snapshotData['photo_path'] as String?;
-    _faccao = snapshotData['faccao'] as String?;
-    _userId = snapshotData['user_id'] as String?;
-    _funcao = getDataList(snapshotData['funcao']);
+    _funcaoId = snapshotData['funcao_id'] as DocumentReference?;
+    _userId = snapshotData['user_id'] as DocumentReference?;
+    _faccaoId = snapshotData['faccao_id'] as DocumentReference?;
+    _validacaoId = snapshotData['validacao_id'] as DocumentReference?;
+    _dtCadastro = snapshotData['dt_cadastro'] as DateTime?;
+    _dtAlteracao = snapshotData['dt_alteracao'] as DateTime?;
+    _userAlteracaoId = snapshotData['user_alteracao_id'] as DocumentReference?;
   }
 
   static CollectionReference get collection =>
@@ -93,15 +117,25 @@ class MembrosRecord extends FirestoreRecord {
 Map<String, dynamic> createMembrosRecordData({
   String? nomeCompleto,
   String? photoPath,
-  String? faccao,
-  String? userId,
+  DocumentReference? funcaoId,
+  DocumentReference? userId,
+  DocumentReference? faccaoId,
+  DocumentReference? validacaoId,
+  DateTime? dtCadastro,
+  DateTime? dtAlteracao,
+  DocumentReference? userAlteracaoId,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'nome_completo': nomeCompleto,
       'photo_path': photoPath,
-      'faccao': faccao,
+      'funcao_id': funcaoId,
       'user_id': userId,
+      'faccao_id': faccaoId,
+      'validacao_id': validacaoId,
+      'dt_cadastro': dtCadastro,
+      'dt_alteracao': dtAlteracao,
+      'user_alteracao_id': userAlteracaoId,
     }.withoutNulls,
   );
 
@@ -117,9 +151,13 @@ class MembrosRecordDocumentEquality implements Equality<MembrosRecord> {
     return e1?.nomeCompleto == e2?.nomeCompleto &&
         listEquality.equals(e1?.vulgo, e2?.vulgo) &&
         e1?.photoPath == e2?.photoPath &&
-        e1?.faccao == e2?.faccao &&
+        e1?.funcaoId == e2?.funcaoId &&
         e1?.userId == e2?.userId &&
-        listEquality.equals(e1?.funcao, e2?.funcao);
+        e1?.faccaoId == e2?.faccaoId &&
+        e1?.validacaoId == e2?.validacaoId &&
+        e1?.dtCadastro == e2?.dtCadastro &&
+        e1?.dtAlteracao == e2?.dtAlteracao &&
+        e1?.userAlteracaoId == e2?.userAlteracaoId;
   }
 
   @override
@@ -127,9 +165,13 @@ class MembrosRecordDocumentEquality implements Equality<MembrosRecord> {
         e?.nomeCompleto,
         e?.vulgo,
         e?.photoPath,
-        e?.faccao,
+        e?.funcaoId,
         e?.userId,
-        e?.funcao
+        e?.faccaoId,
+        e?.validacaoId,
+        e?.dtCadastro,
+        e?.dtAlteracao,
+        e?.userAlteracaoId
       ]);
 
   @override
