@@ -457,8 +457,7 @@ class _CreateMembrosWidgetState extends State<CreateMembrosWidget>
                                                 controller: _model
                                                         .dropDownValueController ??=
                                                     FormFieldController<String>(
-                                                  _model.dropDownValue ??= '1',
-                                                ),
+                                                        null),
                                                 options: List<String>.from(
                                                     dropDownFuncoesRecordList
                                                         .map((e) =>
