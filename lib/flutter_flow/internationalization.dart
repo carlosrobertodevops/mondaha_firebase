@@ -2664,6 +2664,64 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '',
     },
   },
+  // SideBarResponsiveRetract
+  {
+    'rpzqe9j2': {
+      'en': 'My Account',
+      'es': '',
+      'pt': '',
+    },
+    'rjo8o241': {
+      'en': 'Pedroh Olliveira',
+      'es': '',
+      'pt': '',
+    },
+    'a3kg2bz3': {
+      'en': 'HomePage',
+      'es': 'Página principal',
+      'pt': 'Página inicial',
+    },
+    '8ffkp2rj': {
+      'en': 'Clothes & Bags',
+      'es': 'Ropa y bolsos',
+      'pt': 'Roupas e Bolsas',
+    },
+    's2v4tn13': {
+      'en': 'Films & Series',
+      'es': 'Películas y series',
+      'pt': 'Filmes e Séries',
+    },
+    'aqspchy4': {
+      'en': 'Games & Consoles ',
+      'es': 'Juegos y consolas',
+      'pt': 'Jogos e Consoles',
+    },
+    'v7vib78n': {
+      'en': 'SmartPhones ',
+      'es': 'Teléfonos inteligentes',
+      'pt': 'Smartphones',
+    },
+    'hnyilpwo': {
+      'en': 'Computing',
+      'es': 'Computación',
+      'pt': 'Computação',
+    },
+    'hixdaie9': {
+      'en': 'Books & Ebooks',
+      'es': 'Libros y libros electrónicos',
+      'pt': 'Livros e E-books',
+    },
+    'oxcf0vlj': {
+      'en': 'Dark Mode',
+      'es': '',
+      'pt': '',
+    },
+    't6z1pz5k': {
+      'en': 'Logout',
+      'es': '',
+      'pt': '',
+    },
+  },
   // Miscellaneous
   {
     '0nwoj0kc': {
